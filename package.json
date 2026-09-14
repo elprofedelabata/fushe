@@ -1,0 +1,38 @@
+{
+  "name": "fushe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Modelo y herramientas de referencia para el Formato Unificado Simplificado de Horarios Escolares",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "require": "./dist/src/index.js"
+    },
+    "./penalara": {
+      "types": "./dist/src/penalara/index.d.ts",
+      "require": "./dist/src/penalara/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/fushe.test.js dist/tests/penalara.test.js",
+    "check": "npm test",
+    "convertir:penalara": "npm run build && node dist/src/cli/convertir-penalara.js"
+  },
+  "keywords": [
+    "fushe",
+    "horarios",
+    "educacion",
+    "xml"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
+  }
+}

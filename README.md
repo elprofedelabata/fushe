@@ -78,6 +78,37 @@ FUSHE se encuentra en fase de diseño. La sintaxis y el modelo todavía pueden c
 
 La [especificación en desarrollo](docs/estandar-horario.md) recoge las decisiones actuales y los aspectos que deben contrastarse con más aplicaciones y archivos reales.
 
+## Herramientas de referencia
+
+El repositorio incluye una implementación inicial en TypeScript con:
+
+- lectura y escritura del XML FUSHE;
+- validación estructural y de referencias;
+- extracción segura de contenedores `.xrho`;
+- conversión del horario final de Peñalara;
+- anonimización de nombres de profesores.
+
+Instalación y pruebas:
+
+```shell
+npm install
+npm test
+```
+
+Conversión de un archivo de Peñalara:
+
+```shell
+npm run convertir:penalara -- "entrada.xrho" "salida.fushe"
+```
+
+Para crear una muestra publicable sin nombres de profesores:
+
+```shell
+npm run convertir:penalara -- "entrada.xrho" "salida.fushe" --anonimizar
+```
+
+El conversor no reemplaza un archivo existente salvo que se añada `--sobrescribir`. Solo traslada el horario resuelto y, si encuentra una colocación que no puede relacionar de forma segura, termina con un error en lugar de descartarla silenciosamente.
+
 ## Principios
 
 - Independiente de cualquier programa de horarios.
@@ -90,7 +121,11 @@ La [especificación en desarrollo](docs/estandar-horario.md) recoge las decision
 ## Contenido actual
 
 - `docs/estandar-horario.md`: especificación viva del formato.
+- `docs/mapeo-penalara.md`: correspondencia aplicada por el conversor de Peñalara.
 - `examples/horario-minimo.fushe`: ejemplo mínimo provisional.
+- `examples/penalara-ficticio.fushe`: ejemplo completamente ficticio con estructuras observadas en Peñalara.
+- `src/`: núcleo FUSHE y adaptador de Peñalara en TypeScript.
+- `tests/`: pruebas unitarias y reconciliación opcional de muestras privadas.
 
 ## Licencia
 

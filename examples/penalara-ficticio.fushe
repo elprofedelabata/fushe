@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fushe version="1.0">
+  <metadatos>
+    <titulo>Horario escolar completamente ficticio</titulo>
+    <generador nombre="Ejemplo FUSHE" version="0.1.0"/>
+    <origen aplicacion="Peñalara GHC" version="ejemplo"/>
+  </metadatos>
+
+  <estructura>
+    <dias>
+      <dia numero="1"/>
+      <dia numero="2"/>
+      <dia numero="3"/>
+      <dia numero="4"/>
+      <dia numero="5"/>
+    </dias>
+  </estructura>
+
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Jornada de mañana ficticia</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>M1</referencia>
+          <definicion dias="1 2 3 4">
+            <inicio>08:30:00</inicio>
+            <fin>09:25:00</fin>
+          </definicion>
+          <definicion dias="5">
+            <inicio>09:00:00</inicio>
+            <fin>09:55:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02" tipo="lectivo">
+          <referencia>M2</referencia>
+          <definicion>
+            <inicio>09:25:00</inicio>
+            <fin>10:20:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T03" tipo="recreo">
+          <referencia>R</referencia>
+          <definicion>
+            <inicio>10:20:00</inicio>
+            <fin>10:50:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+
+    <perfil id="PH02">
+      <nombre>Jornada de tarde ficticia</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>T1</referencia>
+          <definicion dias="1 3 5">
+            <inicio>16:00:00</inicio>
+            <fin>17:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02" tipo="lectivo">
+          <referencia>T2</referencia>
+          <definicion dias="1 3 5">
+            <inicio>17:00:00</inicio>
+            <fin>18:00:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
+
+  <profesores>
+    <profesor id="P001">
+      <nombre>Docente Alfa</nombre>
+    </profesor>
+    <profesor id="P002">
+      <nombre>Docente Beta</nombre>
+    </profesor>
+    <profesor id="P003">
+      <nombre>Docente Gamma</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>Grupo Aurora</nombre>
+    </grupo>
+    <grupo id="G002">
+      <nombre>Grupo Brisa</nombre>
+    </grupo>
+    <grupo id="G003">
+      <nombre>Grupo Cometa</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>Aula Norte</nombre>
+    </espacio>
+    <espacio id="E002">
+      <nombre>Laboratorio Azul</nombre>
+    </espacio>
+    <espacio id="E003">
+      <nombre>Biblioteca Central</nombre>
+    </espacio>
+    <espacio id="E004">
+      <nombre>Patio Cubierto</nombre>
+    </espacio>
+  </espacios>
+
+  <actividades>
+    <actividad id="A001" tipo="docencia">
+      <referencia>CN</referencia>
+      <nombre>Ciencias de la Naturaleza</nombre>
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </actividad>
+
+    <actividad id="A002" tipo="docencia">
+      <referencia>MAT</referencia>
+      <nombre>Matemáticas aplicadas</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+
+    <actividad id="A003" tipo="docencia">
+      <referencia>PI</referencia>
+      <nombre>Proyecto interdisciplinar</nombre>
+      <profesores>
+        <profesor ref="P001"/>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+
+    <actividad id="A004" tipo="guardia">
+      <referencia>G</referencia>
+      <nombre>Guardia general</nombre>
+    </actividad>
+
+    <actividad id="A005" tipo="reunion">
+      <referencia>RC</referencia>
+      <nombre>Reunión de coordinación</nombre>
+      <profesores>
+        <profesor ref="P001"/>
+        <profesor ref="P002"/>
+        <profesor ref="P003"/>
+      </profesores>
+    </actividad>
+
+    <actividad id="A006" tipo="tutoria">
+      <referencia>TUT</referencia>
+      <nombre>Tutoría grupal</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+  </actividades>
+
+  <sesiones>
+    <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S002" dia="5" perfil="PH01" tramo="T01" actividad="A001">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S003" dia="2" perfil="PH01" tramo="T02" actividad="A002">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S004" dia="3" perfil="PH01" tramo="T02" actividad="A003">
+      <espacios>
+        <espacio ref="E001"/>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S005" dia="3" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S006" dia="4" perfil="PH01" tramo="T02" actividad="A005">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S007" dia="1" perfil="PH02" tramo="T01" actividad="A006">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S008" dia="5" perfil="PH02" tramo="T02" actividad="A006">
+      <profesores>
+        <profesor ref="P002"/>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G003"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+  </sesiones>
+</fushe>
