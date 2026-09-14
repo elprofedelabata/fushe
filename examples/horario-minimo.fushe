@@ -1,18 +1,37 @@
-fushe|1.0
+<?xml version="1.0" encoding="UTF-8"?>
+<fushe version="1.0">
+  <estructura>
+    <dias>
+      <dia numero="1"/>
+      <dia numero="2"/>
+      <dia numero="3"/>
+      <dia numero="4"/>
+      <dia numero="5"/>
+    </dias>
+  </estructura>
 
-[estructura]
-dias|1,2,3,4,5
+  <tramos>
+    <tramo id="T01" tipo="lectivo">
+      <referencia>1ª hora</referencia>
+      <inicio>08:00:00</inicio>
+      <fin>09:00:00</fin>
+    </tramo>
+  </tramos>
 
-[tramos]
-T01|1ª hora|08:00|09:00
+  <actividades>
+    <actividad id="A001" categoria="lectiva" tipo="docencia">
+      <referencia>FIS-2BACH</referencia>
+      <nombre>Física - 2.º Bachillerato</nombre>
+      <profesores>
+        <profesor ref="PEPE"/>
+      </profesores>
+      <asignaciones>
+        <asignacion grupo="2BHA" curso="2BACH" materia="FIS"/>
+      </asignaciones>
+    </actividad>
+  </actividades>
 
-[actividad A001]
-referencia|FIS-2BACH
-nombre|Física - 2.º Bachillerato
-categoria|lectiva
-tipo|docencia
-profesor|PEPE
-asignacion|2BHA|2BACH|FIS
-
-[sesiones]
-S001|1|T01|A001
+  <sesiones>
+    <sesion id="S001" dia="1" tramo="T01" actividad="A001"/>
+  </sesiones>
+</fushe>

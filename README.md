@@ -2,24 +2,45 @@
 
 **Formato Unificado Simplificado de Horarios Escolares**
 
-FUSHE es un formato abierto y legible para representar horarios escolares sin depender de una aplicación concreta. Su objetivo es facilitar el intercambio entre hojas de cálculo, generadores de horarios y plataformas de gestión educativa como Séneca, Peñalara, HorW o FET.
+FUSHE es un formato abierto basado en XML para representar horarios escolares sin depender de una aplicación concreta. Su objetivo es facilitar el intercambio entre hojas de cálculo, generadores de horarios y plataformas de gestión educativa como Séneca, Peñalara, HorW o FET.
 
-```text
-fushe|1.0
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<fushe version="1.0">
+  <estructura>
+    <dias>
+      <dia numero="1"/>
+      <dia numero="2"/>
+      <dia numero="3"/>
+      <dia numero="4"/>
+      <dia numero="5"/>
+    </dias>
+  </estructura>
 
-[estructura]
-dias|1,2,3,4,5
+  <tramos>
+    <tramo id="T01">
+      <referencia>1ª hora</referencia>
+      <inicio>08:00:00</inicio>
+      <fin>09:00:00</fin>
+    </tramo>
+  </tramos>
 
-[tramos]
-T01|1ª hora|08:00|09:00
+  <actividades>
+    <actividad id="A001" categoria="lectiva" tipo="docencia">
+      <nombre>Física</nombre>
+      <profesores>
+        <profesor ref="PEPE"/>
+      </profesores>
+      <asignaciones>
+        <asignacion grupo="2BHA" curso="2BACH" materia="FIS"/>
+      </asignaciones>
+    </actividad>
+  </actividades>
 
-[actividad A001]
-nombre|Física
-profesor|PEPE
-asignacion|2BHA|2BACH|FIS
-
-[sesiones]
-S001|1|T01|A001
+  <sesiones>
+    <sesion id="S001" dia="1" tramo="T01" actividad="A001"/>
+  </sesiones>
+</fushe>
 ```
 
 ## Estado
@@ -31,7 +52,7 @@ La [especificación en desarrollo](docs/estandar-horario.md) distingue las decis
 ## Principios
 
 - Independiente de cualquier programa de horarios.
-- Legible y editable por personas.
+- Basado en XML y compatible con herramientas estándar.
 - Extensible sin perder campos desconocidos.
 - Apto para herramientas locales y adaptadores específicos.
 - Separación entre actividades y sus colocaciones semanales.
