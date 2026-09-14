@@ -3,84 +3,78 @@
 ## Estado del documento
 
 - Estado: borrador vivo.
-- Revisión del documento: 0.3.
-- Nombre acordado: FUSHE, Formato Unificado Simplificado de Horarios Escolares.
-- Extensión acordada: `.fushe`.
-- Representación canónica acordada: XML.
+- Revisión del documento: 0.4.
+- Nombre: FUSHE, Formato Unificado Simplificado de Horarios Escolares.
+- Extensión: `.fushe`.
+- Representación canónica: XML.
 - Versión provisional del formato usada en los ejemplos: 1.0.
-- El contenido marcado como **acordado** forma parte del núcleo actual.
-- El contenido marcado como **propuesta** debe validarse con más archivos y aplicaciones.
 
-Este documento describe FUSHE, un formato para representar horarios escolares de forma independiente de Séneca, Peñalara, HorW, FET y otras aplicaciones. Evolucionará mediante el análisis de archivos reales producidos por esos programas.
+Este documento describe un formato independiente de Séneca, Peñalara, HorW, FET y otras aplicaciones. El modelo seguirá contrastándose con archivos reales antes de publicar su primera versión estable.
 
 ## 1. Objetivo y alcance
 
-FUSHE debe permitir:
+FUSHE representa el **resultado de un horario escolar**: qué actividad se realiza, qué día y a qué hora, quién participa y dónde tiene lugar.
 
-1. Convertir horarios procedentes de hojas de cálculo, texto, fotografías y programas de generación de horarios.
-2. Representar un horario ya generado mediante conceptos comunes y referencias legibles.
-3. Resolver las referencias canónicas contra los catálogos de una aplicación de destino.
-4. Importar el horario en Séneca u otras aplicaciones mediante adaptadores independientes.
-5. Conservar información que un destino no utilice para que pueda aprovecharla otro adaptador.
+Debe permitir:
 
-FUSHE representa principalmente el **resultado de un horario**. No pretende describir inicialmente todo el problema de generación: preferencias, penalizaciones, huecos, restricciones de simultaneidad o reglas de optimización pertenecen a otro ámbito.
+1. Convertir horarios procedentes de hojas de cálculo, texto, fotografías y programas de generación.
+2. Intercambiar horarios ya resueltos sin depender de una aplicación concreta.
+3. Conservar varios perfiles horarios, participantes, grupos y espacios.
+4. Resolver sus referencias contra los catálogos de una aplicación de destino.
+5. Servir como base para adaptadores de Séneca y otros programas.
+
+FUSHE no describe inicialmente el problema de planificación que produjo el horario. Quedan fuera del núcleo:
+
+- preferencias y prohibiciones horarias;
+- aulas candidatas o preferentes;
+- distribuciones semanales deseadas;
+- penalizaciones y criterios de optimización;
+- relaciones de simultaneidad o consecutividad usadas por un generador;
+- formatos de informes y configuración interna de una aplicación.
+
+La conversión desde un proyecto de planificación puede ser completa respecto al horario final aunque omita esos datos auxiliares.
 
 ## 2. Principios de diseño
 
 ### 2.1. Independencia de las aplicaciones
 
-Las referencias internas de FUSHE no serán identificadores de Séneca, Peñalara ni ningún otro programa. Cada adaptador será responsable de relacionarlas con los identificadores del origen o del destino.
+Los identificadores internos de FUSHE no son identificadores de Séneca, Peñalara ni ningún otro programa. Cada adaptador relaciona las referencias FUSHE con los datos del origen o del destino.
+
+La versión inicial no conserva identificadores externos por elemento. Esa posibilidad se reserva para una futura extensión más compleja.
 
 ### 2.2. Una única representación canónica
 
-**Acordado:** todo archivo `.fushe` es un documento XML.
+Todo archivo `.fushe` es un documento XML.
 
 Excel, CSV, fotografías, portapapeles y formatos de terceros son fuentes de importación. No son representaciones alternativas de FUSHE.
 
-### 2.3. Conservación de información
+### 2.3. Definición frente a colocación
 
-Un adaptador puede no utilizar determinados datos, pero no debería eliminarlos al leer y volver a guardar un archivo FUSHE.
+Una **actividad** describe lo que ocurre y sus participantes habituales. Puede ser una clase, guardia, reunión, tutoría, coordinación u otra actividad.
 
-Al preparar una importación, el adaptador debería clasificar la información como:
+Una **sesión** coloca una actividad concreta en un día y un tramo de un perfil horario. Una misma actividad puede aparecer en varias sesiones semanales.
 
-- utilizada;
-- ignorada por el destino;
-- pendiente de correspondencia;
-- incompatible con el destino.
+### 2.4. Catálogos mínimos
 
-### 2.4. Definición frente a colocación
+Profesores, grupos y espacios tienen catálogos independientes para poder referenciarlos sin repetir sus nombres.
 
-Una **actividad** describe qué es, quién participa y qué se imparte.
+Los catálogos contienen solamente información necesaria para interpretar el horario final. Por ejemplo, un grupo necesita inicialmente un identificador y un nombre, pero no su tutor, aula habitual ni preferencias de planificación.
 
-Una **sesión** coloca una actividad en un día y un tramo determinados. Una misma actividad puede aparecer en varias sesiones semanales.
+### 2.5. Complejidad opcional
 
-### 2.5. Referencias estables
-
-Los elementos canónicos tienen identificadores locales como `T01`, `A001` o `S001`. Los nombres visibles pueden cambiar sin romper sus relaciones internas.
-
-### 2.6. Complejidad opcional
-
-Un horario sencillo debe poder representarse con pocos elementos. Las características avanzadas se incorporarán mediante elementos y atributos opcionales.
+Un horario sencillo debe poder escribirse con pocos elementos. Las listas permiten representar casos con varios profesores, grupos o espacios sin complicar el caso habitual de un único participante.
 
 ## 3. Documento XML
 
 ### 3.1. Archivo
 
-**Acordado:**
-
-- Extensión: `.fushe`.
 - XML 1.0.
-- Codificación: UTF-8.
-- Tipo MIME inicial: `application/xml`.
-- Elemento raíz: `fushe`.
+- Codificación UTF-8.
+- Extensión `.fushe`.
+- Tipo MIME inicial `application/xml`.
+- Elemento raíz `fushe`.
 
-Ejemplo de nombre:
-
-```text
-horario-profesor.fushe
-```
-
-Todo archivo comienza con una declaración XML:
+Todo archivo comienza con:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -98,40 +92,40 @@ La raíz declara la versión del formato:
 </fushe>
 ```
 
-El número de versión pertenece al formato FUSHE, no a la aplicación que lo genera ni a la versión de la librería de referencia.
+El número corresponde al formato FUSHE, no a la aplicación generadora ni a la versión de una librería.
 
 ### 3.3. Orden canónico
 
-**Propuesta:** los elementos principales aparecen en este orden:
+Los elementos principales aparecen en este orden:
 
 ```xml
 <fushe version="1.0">
   <metadatos/>
   <estructura/>
-  <marcos/>
-  <tramos/>
+  <perfiles/>
+  <profesores/>
+  <grupos/>
+  <espacios/>
   <actividades/>
   <sesiones/>
   <extensiones/>
 </fushe>
 ```
 
-Todos salvo `estructura`, `tramos`, `actividades` y `sesiones` pueden omitirse cuando no sean necesarios.
+`metadatos`, `profesores`, `grupos`, `espacios` y `extensiones` pueden omitirse cuando estén vacíos. `estructura`, `perfiles`, `actividades` y `sesiones` forman el núcleo del documento.
 
 ### 3.4. Convenciones de nombres
 
-**Propuesta:**
-
 - Los nombres de elementos y atributos se escriben en español, en minúsculas y sin tildes.
-- Los identificadores, referencias breves y valores enumerados se expresan mediante atributos.
-- Los nombres completos, descripciones y texto libre se expresan mediante contenido de elementos.
+- Los identificadores, referencias y valores enumerados se expresan mediante atributos.
+- Los nombres completos, descripciones y texto libre se expresan mediante elementos.
 - Los booleanos utilizan exclusivamente `true` y `false`.
-- El espacio en blanco usado para indentar no tiene significado.
+- El espacio usado para indentar no tiene significado.
 - Los comentarios XML no forman parte del modelo de datos.
 
 ### 3.5. Identificadores
 
-**Propuesta:** los identificadores locales:
+Los identificadores locales:
 
 - son únicos dentro de su clase;
 - comienzan por una letra;
@@ -141,17 +135,20 @@ Todos salvo `estructura`, `tramos`, `actividades` y `sesiones` pueden omitirse c
 Ejemplos recomendados:
 
 ```text
-M01
+PH01
 T01
+P001
+G001
+E001
 A001
 S001
 ```
 
+Los identificadores de tramo son únicos dentro de su perfil. Una referencia completa a un tramo está formada por `perfil` y `tramo`.
+
 ## 4. Estructura semanal
 
-### 4.1. Días
-
-**Acordado:** la estructura contiene inicialmente los días activos.
+La estructura declara los días que puede utilizar el horario:
 
 ```xml
 <estructura>
@@ -165,7 +162,7 @@ S001
 </estructura>
 ```
 
-La numeración es:
+La numeración canónica es:
 
 | Valor | Día |
 | ---: | --- |
@@ -180,194 +177,176 @@ La numeración es:
 Reglas:
 
 - Solo se admiten valores entre `1` y `7`.
-- Un día no puede aparecer repetido.
-- El orden de los elementos `dia` determina el orden de presentación.
-- El adaptador de destino debe advertir si no admite alguno de los días utilizados.
+- Un día no puede repetirse.
+- El orden de los elementos determina el orden de presentación.
+- Un adaptador debe advertir si el destino no admite alguno de los días utilizados.
 
-## 5. Marcos horarios
+## 5. Perfiles horarios
 
-**Propuesta surgida del análisis de Peñalara.**
-
-Un centro puede utilizar simultáneamente varios marcos con horas diferentes:
+Un perfil reúne los tramos aplicables a una parte del horario. Permite que un centro utilice simultáneamente estructuras horarias diferentes.
 
 ```xml
-<marcos>
-  <marco id="M01">
-    <referencia>Marco A</referencia>
-  </marco>
-  <marco id="M02">
-    <referencia>Marco B</referencia>
-  </marco>
-</marcos>
+<perfiles>
+  <perfil id="PH01">
+    <nombre>Horario general</nombre>
+    <tramos>
+      <tramo id="T01" tipo="lectivo">
+        <referencia>1.ª hora</referencia>
+        <definicion>
+          <inicio>08:00:00</inicio>
+          <fin>09:00:00</fin>
+        </definicion>
+      </tramo>
+    </tramos>
+  </perfil>
+</perfiles>
 ```
 
-Si no se declara `marcos`, todos los tramos pertenecen implícitamente a un único marco predeterminado.
+Cada perfil contiene uno o más tramos. No existen tramos globales fuera de los perfiles.
 
-## 6. Tramos horarios
+### 5.1. Tramos
 
-### 6.1. Tramo mínimo
+Un tramo contiene:
+
+| Elemento o atributo | Cardinalidad | Descripción |
+| --- | ---: | --- |
+| `tramo/@id` | 1 | Identificador único dentro del perfil. |
+| `tramo/@tipo` | 0..1 | Naturaleza del tramo. |
+| `referencia` | 1 | Nombre breve, como `1.ª hora` o `Recreo`. |
+| `definicion` | 1..n | Horario del tramo para uno o varios días. |
+
+El vocabulario inicial de `tipo` permanece abierto. Algunos valores previsibles son `lectivo`, `recreo`, `mediodia`, `transicion` y `otro`.
+
+### 5.2. Horario común y variaciones por día
+
+Una definición sin el atributo `dias` se aplica a todos los días declarados en `estructura`:
 
 ```xml
-<tramos>
-  <tramo id="T01">
-    <referencia>1ª hora</referencia>
+<tramo id="T01" tipo="lectivo">
+  <referencia>1.ª hora</referencia>
+  <definicion>
     <inicio>08:00:00</inicio>
     <fin>09:00:00</fin>
-  </tramo>
-</tramos>
-```
-
-Reglas propuestas:
-
-- El atributo `id` y el elemento `referencia` son obligatorios.
-- `inicio` y `fin` deben aparecer juntos o quedar ambos ausentes.
-- Las horas utilizan el formato de 24 horas `HH:mm:ss`, compatible con el tipo `xs:time` de XML Schema.
-- Los identificadores de tramo no pueden repetirse.
-
-Un tramo sin horas conocidas puede expresarse así:
-
-```xml
-<tramo id="T01">
-  <referencia>Primera sesión</referencia>
+  </definicion>
 </tramo>
 ```
 
-### 6.2. Tipo, días y marco
+Cuando las horas cambian según el día, se escriben varias definiciones:
 
 ```xml
-<tramo id="T01" tipo="lectivo" marco="M01">
-  <referencia>1ª hora</referencia>
-  <inicio>08:30:00</inicio>
-  <fin>09:20:00</fin>
-  <dias>
-    <dia numero="1"/>
-    <dia numero="2"/>
-    <dia numero="3"/>
-    <dia numero="4"/>
-    <dia numero="5"/>
-  </dias>
+<tramo id="T01" tipo="lectivo">
+  <referencia>1.ª hora</referencia>
+  <definicion dias="1 2 3 4">
+    <inicio>08:00:00</inicio>
+    <fin>09:00:00</fin>
+  </definicion>
+  <definicion dias="5">
+    <inicio>08:30:00</inicio>
+    <fin>09:30:00</fin>
+  </definicion>
 </tramo>
 ```
 
-Campos opcionales:
+Reglas:
 
-- `tipo`: naturaleza del tramo. Vocabulario inicial abierto: `lectivo`, `recreo`, `mediodia`, `transicion`, `otro`.
-- `marco`: referencia a un elemento de `marcos`.
-- `dias`: días concretos en los que existe. Si se omite, se aplican los días de `estructura`.
+- `dias` es una lista separada por espacios de números declarados en `estructura`.
+- Dos definiciones del mismo tramo no pueden incluir el mismo día.
+- Si una definición omite `dias`, debe ser la única definición del tramo.
+- `inicio` y `fin` son obligatorios y usan el formato de 24 horas `HH:mm:ss`.
+- Una sesión no puede utilizar un tramo en un día para el que no exista definición.
 
-El vocabulario de `tipo` no debe cerrarse hasta analizar más programas.
+## 6. Profesores
 
-## 7. Actividades
+El catálogo de profesores es opcional y utiliza un modelo mínimo:
 
-### 7.1. Modelo general
+```xml
+<profesores>
+  <profesor id="P001">
+    <nombre>Pepe Pérez</nombre>
+  </profesor>
+  <profesor id="P002">
+    <nombre>María García</nombre>
+  </profesor>
+</profesores>
+```
+
+Cada profesor tiene un `id` y un `nombre`. Departamentos, preferencias horarias y prioridades de generación quedan fuera del núcleo.
+
+## 7. Grupos
+
+El catálogo de grupos es opcional y también utiliza un modelo mínimo:
+
+```xml
+<grupos>
+  <grupo id="G001">
+    <nombre>2.º BHA</nombre>
+  </grupo>
+</grupos>
+```
+
+Cada grupo tiene únicamente un `id` y un `nombre`. El curso, la enseñanza, el tutor, el perfil predeterminado y el aula habitual no forman parte de la versión inicial.
+
+Un adaptador puede deducir esos datos o solicitar al usuario la correspondencia necesaria para una aplicación de destino.
+
+## 8. Espacios
+
+El catálogo de espacios describe ubicaciones que aparecen realmente en el horario:
+
+```xml
+<espacios>
+  <espacio id="E001">
+    <nombre>Aula 211</nombre>
+  </espacio>
+</espacios>
+```
+
+Cada espacio tiene un `id` y un `nombre`. FUSHE Core no almacena espacios posibles, preferentes o prohibidos.
+
+## 9. Actividades
+
+Una actividad es el concepto común para clases, guardias, reuniones y otras tareas incluidas en un horario.
 
 ```xml
 <actividades>
-  <actividad id="A001" categoria="lectiva" tipo="docencia">
-    <referencia>FIS-2BACH</referencia>
-    <nombre>Física - 2.º Bachillerato</nombre>
-
+  <actividad id="A001" tipo="docencia">
+    <referencia>FIS</referencia>
+    <nombre>Física</nombre>
     <profesores>
-      <profesor ref="PEPE"/>
+      <profesor ref="P001"/>
     </profesores>
-
-    <asignaciones>
-      <asignacion grupo="2BHA" curso="2BACH-CYT" materia="FIS"/>
-      <asignacion grupo="2BHB" curso="2BACH-CYT" materia="FIS"/>
-      <asignacion grupo="2BHC" curso="2BACH-CYT" materia="FIS"/>
-    </asignaciones>
-
-    <ubicaciones>
-      <ubicacion aula="211"/>
-    </ubicaciones>
-
-    <origen sistema="penalara" id="ACT-347"/>
+    <grupos>
+      <grupo ref="G001"/>
+    </grupos>
   </actividad>
 </actividades>
 ```
 
-### 7.2. Campos generales
+### 9.1. Campos
 
 | Elemento o atributo | Cardinalidad | Descripción |
-| --- | --- | --- |
-| `actividad/@id` | 1 | Identificador canónico de la actividad. |
-| `actividad/@categoria` | 0..1 | Clasificación general, inicialmente `lectiva` o `no_lectiva`. |
-| `actividad/@tipo` | 0..1 | Concepto concreto: `docencia`, `guardia`, `reunion`, `coordinacion`, etc. |
-| `referencia` | 0..1 | Código o nombre corto visible en el horario. |
-| `nombre` | 0..1 | Descripción legible de la actividad. |
-| `profesores/profesor` | 0..n | Referencias de docentes participantes. |
-| `asignaciones/asignacion` | 0..n | Relaciones entre grupo, curso y materia. |
-| `ubicaciones/ubicacion` | 0..n | Ubicaciones predeterminadas o posibles. |
-| `etiquetas/etiqueta` | 0..n | Clasificaciones adicionales. |
-| `origen` | 0..n | Sistema e identificador de procedencia. |
-| `extensiones` | 0..1 | Información específica que debe conservarse. |
+| --- | ---: | --- |
+| `actividad/@id` | 1 | Identificador canónico. |
+| `actividad/@tipo` | 1 | Clase de actividad. |
+| `referencia` | 0..1 | Código o nombre breve. |
+| `nombre` | 1 | Nombre legible. |
+| `profesores/profesor` | 0..n | Profesores habituales. |
+| `grupos/grupo` | 0..n | Grupos habituales. |
 
-La obligatoriedad real depende del tipo de actividad y del adaptador de destino. Séneca puede exigir grupo, curso y materia para una actividad docente, pero no para una guardia.
+El vocabulario de `tipo` permanece abierto. Algunos valores iniciales son `docencia`, `guardia`, `reunion`, `tutoria`, `coordinacion`, `complementaria` y `otra`.
 
-### 7.3. Profesores
+Una actividad docente puede asociarse con varios grupos. FUSHE conserva esa relación sin decidir si la combinación es académicamente correcta; el adaptador de destino puede mostrar advertencias o solicitar una correspondencia.
 
-```xml
-<profesores>
-  <profesor ref="PEPE"/>
-  <profesor ref="MARIA"/>
-</profesores>
-```
+Las listas permiten docencia compartida, agrupamientos y reuniones con varios participantes. Una guardia puede omitir profesores habituales cuando la persona asignada cambia en cada sesión.
 
-La colección permite docencia compartida. Un adaptador de Séneca que importe el horario del usuario conectado puede ignorarla, mientras que otros programas pueden utilizarla.
+## 10. Sesiones
 
-### 7.4. Asignaciones académicas
+Una sesión es una aparición concreta de una actividad en el horario.
 
-```xml
-<asignaciones>
-  <asignacion grupo="2BHA" curso="2BACH-CYT" materia="FIS"/>
-  <asignacion grupo="2BHB" curso="2BACH-CYT" materia="FIS"/>
-  <asignacion grupo="2BHC" curso="2BACH-CYT" materia="FIS"/>
-</asignaciones>
-```
-
-Cada `asignacion` representa una relación independiente. Esto permite trasladar una clase con varios grupos a las asignaciones independientes utilizadas por Séneca.
-
-Los atributos opcionales pueden omitirse:
-
-```xml
-<asignacion grupo="2BHA" materia="FIS"/>
-```
-
-### 7.5. Ubicación predeterminada
-
-```xml
-<ubicaciones>
-  <ubicacion edificio="EDIFICIO-A" aula="AULA-12"/>
-  <ubicacion aula="211"/>
-</ubicaciones>
-```
-
-Una ubicación de la actividad puede ser un valor predeterminado o una posibilidad procedente de un generador. La ubicación definitiva de una sesión prevalece sobre ella.
-
-### 7.6. Actividad no lectiva
-
-```xml
-<actividad id="A002" categoria="no_lectiva" tipo="guardia">
-  <referencia>GM</referencia>
-  <nombre>Guardia de mañana</nombre>
-  <profesores>
-    <profesor ref="PEPE"/>
-  </profesores>
-  <origen sistema="penalara" id="GUARDIA-MANANA"/>
-</actividad>
-```
-
-## 8. Sesiones
-
-Una sesión representa una aparición concreta de una actividad en el horario.
-
-### 8.1. Sesión mínima
+### 10.1. Sesión mínima
 
 ```xml
 <sesiones>
-  <sesion id="S001" dia="4" tramo="T02" actividad="A001"/>
-  <sesion id="S002" dia="3" tramo="T05" actividad="A001"/>
-  <sesion id="S003" dia="1" tramo="T02" actividad="A002"/>
+  <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001"/>
 </sesiones>
 ```
 
@@ -375,183 +354,183 @@ Una sesión representa una aparición concreta de una actividad en el horario.
 | --- | --- |
 | `id` | Identificador canónico de la sesión. |
 | `dia` | Día canónico del `1` al `7`. |
-| `tramo` | Identificador declarado en `tramos`. |
-| `actividad` | Identificador declarado en `actividades`. |
+| `perfil` | Perfil horario utilizado. |
+| `tramo` | Tramo perteneciente a ese perfil. |
+| `actividad` | Actividad colocada. |
 
-### 8.2. Ubicación final
+### 10.2. Espacios definitivos
+
+Una sesión puede tener uno o varios espacios definitivos:
 
 ```xml
-<sesion id="S001" dia="1" tramo="T01" actividad="A001">
-  <ubicacion aula="A-1"/>
+<sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+  <espacios>
+    <espacio ref="E001"/>
+  </espacios>
 </sesion>
 ```
 
-La ubicación de la sesión prevalece sobre cualquier ubicación declarada en la actividad.
+La ausencia de `espacios` significa que la ubicación se desconoce o no resulta aplicable.
 
-### 8.3. Procedencia de la sesión
+### 10.3. Participantes específicos
+
+Por defecto, una sesión utiliza los profesores y grupos de su actividad. Una sesión concreta puede declarar sus propios participantes:
 
 ```xml
-<sesion id="S001" dia="1" tramo="T01" actividad="A001">
-  <ubicacion aula="A-1"/>
-  <origen sistema="penalara" id="SESION-34"/>
+<sesion id="S002" dia="2" perfil="PH01" tramo="T01" actividad="A001">
+  <profesores>
+    <profesor ref="P001"/>
+    <profesor ref="P002"/>
+  </profesores>
+  <grupos>
+    <grupo ref="G001"/>
+  </grupos>
 </sesion>
 ```
 
-## 9. Metadatos, procedencia y extensiones
+Si aparece una lista de profesores o grupos en la sesión, **sustituye por completo** a la lista correspondiente de la actividad para esa aparición. No se suman ambas listas.
 
-### 9.1. Metadatos del documento
+Esto permite representar, entre otros casos, una guardia asignada a una persona concreta, docencia compartida o una sesión semanal con participantes diferentes.
 
-**Propuesta:**
+## 11. Metadatos y extensiones
+
+### 11.1. Metadatos del documento
+
+Los metadatos son opcionales:
 
 ```xml
 <metadatos>
-  <titulo>Horario de Pepe</titulo>
+  <titulo>Horario del centro</titulo>
   <creado>2026-09-14T19:00:00+02:00</creado>
-  <generador nombre="FUSHE Core" version="0.1.0"/>
-  <origen sistema="penalara" archivo="horario.xrho"/>
+  <generador nombre="Conversor FUSHE" version="0.1.0"/>
+  <origen aplicacion="Peñalara GHC" version="20230206" archivo="horario.xrho"/>
 </metadatos>
 ```
 
-No debe almacenarse información personal innecesaria.
+`origen` describe el documento de procedencia. No se guardan identificadores del sistema de origen en cada actividad, sesión u otra entidad.
 
-### 9.2. Extensiones
+No deben almacenarse rutas locales, nombres de ordenador ni información personal innecesaria.
 
-Mientras no se diseñen namespaces de extensión, se propone un contenedor explícito:
+### 11.2. Extensiones
+
+Mientras no se diseñen namespaces de extensión, se reserva un contenedor explícito:
 
 ```xml
 <extensiones>
-  <extension sistema="penalara" clave="grupoMateriaTipo">N</extension>
+  <extension sistema="ejemplo" clave="dato">valor</extension>
 </extensiones>
 ```
 
-Los adaptadores que no comprendan una extensión pueden ignorarla semánticamente, pero deberían conservarla durante una lectura y escritura.
+Un adaptador que no comprenda una extensión puede ignorarla semánticamente, pero debería conservarla al volver a guardar el archivo.
 
-### 9.3. Namespace XML
+### 11.3. Namespace XML
 
-El namespace canónico queda pendiente hasta elegir una dirección estable para publicar los esquemas. Añadirlo antes de la primera versión estable será una decisión potencialmente incompatible y deberá documentarse.
+El namespace canónico queda pendiente hasta disponer de una dirección estable para publicar los esquemas. Se añadirá antes de la primera versión estable.
 
-## 10. Validación
+## 12. Validación
 
-### 10.1. XML bien formado
+### 12.1. Validación general
 
-Todo archivo `.fushe` debe ser XML bien formado. Un error de sintaxis XML impide procesar el documento.
+Una implementación debe comprobar como mínimo:
 
-### 10.2. Validación general
+- que el XML está bien formado;
+- que la versión es reconocida;
+- que los días son válidos y no están repetidos;
+- que los identificadores son únicos dentro de su clase;
+- que cada tramo es único dentro de su perfil;
+- que todas las referencias apuntan a elementos existentes;
+- que una sesión utiliza un tramo disponible para su día;
+- que las definiciones de un tramo no solapan días;
+- que las horas tienen un formato coherente y `inicio` es anterior a `fin`;
+- que se respetan los elementos y atributos obligatorios.
 
-La librería de referencia debe comprobar como mínimo:
+### 12.2. XML Schema
 
-- versión reconocida;
-- días válidos y no repetidos;
-- identificadores únicos dentro de cada clase;
-- referencias a marcos, tramos y actividades existentes;
-- formato coherente de las horas;
-- presencia simultánea de hora inicial y final;
-- atributos obligatorios;
-- cardinalidad de elementos;
-- ubicación de los elementos en el orden definido por el esquema.
+Se publicará `fushe.xsd` cuando el modelo básico haya sido validado con más aplicaciones reales. Permitirá validar documentos, generar tipos en distintos lenguajes y documentar formalmente las cardinalidades.
 
-### 10.3. XML Schema
+### 12.3. Validación del destino
 
-Se publicará un archivo `fushe.xsd` cuando el modelo básico esté suficientemente validado con aplicaciones reales.
+Un archivo FUSHE puede ser válido aunque no sea importable directamente en una aplicación concreta.
 
-El esquema permitirá:
-
-- validar documentos sin utilizar la librería oficial;
-- generar tipos y clases en diferentes lenguajes;
-- documentar cardinalidades y tipos;
-- reservar puntos de extensión.
-
-### 10.4. Validación del destino
-
-Un archivo FUSHE puede ser válido aunque no sea importable directamente en un destino concreto.
-
-Antes de modificar el destino, el adaptador debe mostrar:
+Antes de modificar el destino, un adaptador debe mostrar:
 
 - correspondencias resueltas;
 - valores ambiguos;
 - información requerida que falta;
 - funciones o días no compatibles;
-- datos que se ignorarán;
+- datos que serán ignorados;
 - conflictos con el horario existente;
 - resultado previsto de conservar o sobrescribir el horario actual.
 
-## 11. Correspondencia provisional con Séneca
+La coherencia académica entre grupos y actividades corresponde al adaptador o al usuario, no al formato base.
+
+## 13. Correspondencia provisional con Séneca
 
 | Concepto FUSHE | Elemento de Séneca |
 | --- | --- |
-| `sesion/@dia` y `sesion/@tramo` | Celda `LUNES_n` … `VIERNES_n` y `X_TRAMO_n`. |
-| `actividad/@categoria` | Filtro `FILTRADO_ACTIVIDAD`. |
-| `actividad/@tipo` y referencias resueltas | Selector `X_ACTIVIDAD`. |
-| `asignacion/@grupo` | `X_UNIDAD`. |
-| `asignacion/@curso` | `X_OFERTAMATRIC`. |
-| `asignacion/@materia` | `X_MATERIAOMG`. |
-| `ubicacion/@edificio` | `X_EDIFICIO`. |
-| `ubicacion/@aula` | `X_DEPENDENCIA`. |
-| Varias `asignacion` | Varios registros `TRAMO` en la misma celda. |
-| `profesores` | No se utiliza al importar el horario del usuario conectado. |
-| `origen` y `extensiones` | No se utilizan para escribir en Séneca. |
+| `sesion/@dia`, `@perfil` y `@tramo` | Celda y tramo horario correspondiente. |
+| `actividad/@tipo` | Filtro y selector de actividad. |
+| `actividad/grupos` o sustitución en la sesión | Unidad o grupo. |
+| `actividad/nombre` y `referencia` | Ayuda para resolver curso y materia. |
+| `sesion/espacios` | Edificio y dependencia definitivos. |
+| Varios grupos | Varios registros independientes en la misma celda. |
+| Profesores | El adaptador del horario personal puede ignorarlos. |
 
-Los identificadores dinámicos de Séneca se resuelven durante la importación y no se almacenan como identificadores canónicos.
+FUSHE no guarda los identificadores dinámicos de Séneca. El adaptador carga sus desplegables, compara nombres y referencias y solicita al usuario que resuelva las correspondencias ambiguas o ausentes.
 
-## 12. Hallazgos de la muestra de Peñalara
+Como FUSHE Core no conserva curso y materia como catálogos independientes, una importación puede requerir confirmación adicional aunque el archivo sea válido.
+
+## 14. Hallazgos de la muestra de Peñalara
 
 Archivo analizado: `ejemploDosMarcosHorariosR1.xrho`.
 
-- La muestra no está cifrada.
-- Es un contenedor GZIP.
-- Tras una cabecera binaria de 7 bytes contiene XML en ISO-8859-1.
-- El XML tiene como raíz `datosGHC` y declara la versión `20230206`.
-- Después del XML existe un bloque binario relacionado aparentemente con informes y presentación.
-- Contiene dos marcos horarios con tramos diferentes.
-- Peñalara numera los días de `0` a `4`; el adaptador debe convertirlos a `1` a `5`.
-- Los tramos se definen por marco, día e índice e incluyen inicio, fin, tipo y referencia.
-- Las sesiones lectivas contienen materia, grupo, profesor, duración, distribución, aulas candidatas, tarea y relaciones con otros grupos.
-- El horario resuelto almacena por separado la colocación concreta: marco, día, índice, aula, sesión y profesor.
-- También existen reuniones, guardias y actividades complementarias con estructuras diferentes.
-- Las preferencias y restricciones de generación no son necesarias para obtener el horario final de un profesor.
+- La muestra es un contenedor GZIP y no está cifrada.
+- Contiene XML con raíz `datosGHC` y versión `20230206`, además de un bloque binario relacionado aparentemente con informes y presentación.
+- Incluye dos perfiles horarios, con ocho y nueve tramos respectivamente.
+- Peñalara numera los días de `0` a `4`; un adaptador debe convertirlos a `1` a `5`.
+- Los tramos se definen por perfil, día e índice. En la muestra sus horas no varían según el día, aunque el formato permite hacerlo.
+- Hay 38 definiciones lectivas y 199 colocaciones finales: 116 lectivas, 60 guardias, 3 reuniones y 20 complementarias.
+- Las 199 colocaciones pueden expresarse con el modelo FUSHE acordado.
+- Peñalara también conserva distribuciones deseadas, aulas candidatas, relaciones entre sesiones, preferencias y criterios del generador.
 
-Consecuencia para FUSHE: el marco horario debe poder conservarse y la ubicación final debe poder pertenecer a la sesión.
+Esos últimos datos son importantes para volver a generar el proyecto, pero no para intercambiar su horario final; por ello quedan fuera de FUSHE Core.
 
-## 13. Seguridad
+## 15. Seguridad
 
 Las implementaciones deben:
 
 - rechazar documentos con DTD;
 - desactivar entidades externas;
 - impedir accesos a red o al sistema de archivos durante el análisis XML;
-- limitar razonablemente el tamaño del documento, la profundidad y el número de elementos;
+- limitar razonablemente tamaño, profundidad y número de elementos;
 - no ejecutar contenido almacenado en texto, comentarios o extensiones;
-- tratar todas las referencias procedentes del archivo como datos no confiables.
+- tratar todas las referencias como datos no confiables.
 
 Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recursos.
 
-## 14. Extensiones posibles todavía no diseñadas
+## 16. Extensiones posibles todavía no diseñadas
 
-Estas posibilidades se registran sin incorporarlas todavía al formato:
-
-- Catálogos independientes de profesores, grupos, cursos, materias, edificios y aulas.
+- Curso, enseñanza y materia como datos estructurados.
+- Identificadores externos por entidad y conversiones reversibles.
 - Alias y reglas de correspondencia entre aplicaciones.
 - Fechas de vigencia y semanas alternas.
 - Calendarios con ciclos superiores a una semana.
-- Sesiones que ocupen varios tramos consecutivos.
-- Sustituciones por sesión de profesores, grupos o materias.
-- Varias ubicaciones simultáneas.
+- Sesiones que ocupen varios tramos consecutivos como un único bloque.
 - Actividades sin hora concreta.
 - Identificadores de centro, curso académico y propietario del horario.
-- Procedencia por campo y fragmento original del que se extrajo el dato.
-- Representación de incertidumbre procedente de OCR o importaciones ambiguas.
-- Vocabularios normalizados para categorías, actividades y tipos de tramo.
+- Procedencia por campo y representación de incertidumbre de OCR.
+- Vocabularios normalizados para actividades y tipos de tramo.
 - Namespaces XML para extensiones desarrolladas por terceros.
-- Restricciones de generación, si en el futuro se define otro estándar para proyectos de planificación.
+- Un formato o extensión independiente para proyectos de planificación.
 
-## 15. Ejemplo completo provisional
+## 17. Ejemplo completo provisional
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <fushe version="1.0">
   <metadatos>
-    <titulo>Horario de Pepe</titulo>
-    <generador nombre="Ejemplo FUSHE" version="0.1.0"/>
+    <titulo>Horario de ejemplo</titulo>
+    <generador nombre="Ejemplo FUSHE" version="0.4"/>
   </metadatos>
 
   <estructura>
@@ -564,81 +543,121 @@ Estas posibilidades se registran sin incorporarlas todavía al formato:
     </dias>
   </estructura>
 
-  <marcos>
-    <marco id="M01">
-      <referencia>Marco general</referencia>
-    </marco>
-  </marcos>
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Horario general</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>1.ª hora</referencia>
+          <definicion>
+            <inicio>08:00:00</inicio>
+            <fin>09:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02" tipo="lectivo">
+          <referencia>2.ª hora</referencia>
+          <definicion dias="1 2 3 4">
+            <inicio>09:00:00</inicio>
+            <fin>10:00:00</fin>
+          </definicion>
+          <definicion dias="5">
+            <inicio>09:15:00</inicio>
+            <fin>10:15:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
 
-  <tramos>
-    <tramo id="T01" tipo="lectivo" marco="M01">
-      <referencia>1ª hora</referencia>
-      <inicio>08:00:00</inicio>
-      <fin>09:00:00</fin>
-    </tramo>
-    <tramo id="T02" tipo="lectivo" marco="M01">
-      <referencia>2ª hora</referencia>
-      <inicio>09:00:00</inicio>
-      <fin>10:00:00</fin>
-    </tramo>
-    <tramo id="T03" tipo="recreo" marco="M01">
-      <referencia>Recreo</referencia>
-      <inicio>10:00:00</inicio>
-      <fin>10:30:00</fin>
-    </tramo>
-  </tramos>
+  <profesores>
+    <profesor id="P001">
+      <nombre>Pepe Pérez</nombre>
+    </profesor>
+    <profesor id="P002">
+      <nombre>María García</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>2.º BHA</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>Aula 211</nombre>
+    </espacio>
+  </espacios>
 
   <actividades>
-    <actividad id="A001" categoria="lectiva" tipo="docencia">
-      <referencia>FIS-2BACH</referencia>
-      <nombre>Física - 2.º Bachillerato</nombre>
+    <actividad id="A001" tipo="docencia">
+      <referencia>FIS</referencia>
+      <nombre>Física</nombre>
       <profesores>
-        <profesor ref="PEPE"/>
+        <profesor ref="P001"/>
       </profesores>
-      <asignaciones>
-        <asignacion grupo="2BHA" curso="2BACH-CYT" materia="FIS"/>
-        <asignacion grupo="2BHB" curso="2BACH-CYT" materia="FIS"/>
-        <asignacion grupo="2BHC" curso="2BACH-CYT" materia="FIS"/>
-      </asignaciones>
-      <ubicaciones>
-        <ubicacion aula="211"/>
-      </ubicaciones>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
     </actividad>
 
-    <actividad id="A002" categoria="no_lectiva" tipo="guardia">
+    <actividad id="A002" tipo="guardia">
       <referencia>GM</referencia>
       <nombre>Guardia de mañana</nombre>
-      <profesores>
-        <profesor ref="PEPE"/>
-      </profesores>
     </actividad>
   </actividades>
 
   <sesiones>
-    <sesion id="S001" dia="4" tramo="T02" actividad="A001">
-      <ubicacion aula="211"/>
+    <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
     </sesion>
-    <sesion id="S002" dia="3" tramo="T01" actividad="A001">
-      <ubicacion aula="211"/>
+    <sesion id="S002" dia="5" perfil="PH01" tramo="T02" actividad="A001">
+      <profesores>
+        <profesor ref="P001"/>
+        <profesor ref="P002"/>
+      </profesores>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
     </sesion>
-    <sesion id="S003" dia="1" tramo="T02" actividad="A002"/>
+    <sesion id="S003" dia="2" perfil="PH01" tramo="T02" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
   </sesiones>
 </fushe>
 ```
 
-## 16. Decisiones abiertas
+## 18. Decisiones abiertas
 
 1. Elegir y publicar el namespace XML canónico.
 2. Validar el modelo con muestras de HorW y FET.
-3. Definir un vocabulario inicial de `categoria` y `tipo` sin hacerlo dependiente de Séneca.
-4. Decidir si las ubicaciones de una actividad son predeterminadas, posibles o ambas mediante elementos distintos.
-5. Decidir cómo representar una sesión que ocupe varios tramos.
-6. Diseñar catálogos reutilizables de profesores, grupos, materias y espacios.
-7. Diseñar el mecanismo definitivo de extensiones y conservación de elementos desconocidos.
-8. Preparar el primer XML Schema.
-9. Preparar ejemplos canónicos obtenidos de cada programa analizado.
+3. Definir un vocabulario inicial de tipos de actividad y tramo sin ligarlo a Séneca.
+4. Decidir cómo representar una sesión que ocupe varios tramos como un único bloque.
+5. Evaluar si curso, enseñanza y materia necesitan estructura propia en una versión posterior.
+6. Diseñar el mecanismo definitivo de extensiones y conservación de elementos desconocidos.
+7. Preparar el primer XML Schema.
+8. Preparar ejemplos canónicos obtenidos de cada programa analizado.
 
-## 17. Historial
+## 19. Historial
+
+### Revisión 0.4
+
+- Sustitución de marcos y tramos globales por perfiles que contienen sus propios tramos.
+- Incorporación de variaciones horarias de un tramo según el día.
+- Incorporación de catálogos mínimos de profesores, grupos y espacios.
+- Simplificación de los grupos a identificador y nombre.
+- Generalización de las actividades para docencia y tareas no lectivas.
+- Admisión de varios profesores, grupos y espacios.
+- Definición de participantes habituales en la actividad y sustituciones completas en la sesión.
+- Conservación exclusiva de espacios definitivos.
+- Limitación de la procedencia a los metadatos del documento.
+- Exclusión explícita de datos de planificación del núcleo de FUSHE.
+- Confirmación de que el horario final de la muestra de Peñalara es representable.
 
 ### Revisión 0.3
 
@@ -652,7 +671,6 @@ Estas posibilidades se registran sin incorporarlas todavía al formato:
 
 - Adopción del nombre FUSHE: Formato Unificado Simplificado de Horarios Escolares.
 - Adopción de la extensión `.fushe`.
-- Adopción de `fushe` como identificador de cabecera de la sintaxis inicial, retirado en la revisión 0.3.
 
 ### Revisión 0.1
 

@@ -10,28 +10,56 @@
     </dias>
   </estructura>
 
-  <tramos>
-    <tramo id="T01" tipo="lectivo">
-      <referencia>1ª hora</referencia>
-      <inicio>08:00:00</inicio>
-      <fin>09:00:00</fin>
-    </tramo>
-  </tramos>
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Horario general</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>1.ª hora</referencia>
+          <definicion>
+            <inicio>08:00:00</inicio>
+            <fin>09:00:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
+
+  <profesores>
+    <profesor id="P001">
+      <nombre>Pepe Pérez</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>2.º BHA</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>Aula 211</nombre>
+    </espacio>
+  </espacios>
 
   <actividades>
-    <actividad id="A001" categoria="lectiva" tipo="docencia">
-      <referencia>FIS-2BACH</referencia>
-      <nombre>Física - 2.º Bachillerato</nombre>
+    <actividad id="A001" tipo="docencia">
+      <nombre>Física</nombre>
       <profesores>
-        <profesor ref="PEPE"/>
+        <profesor ref="P001"/>
       </profesores>
-      <asignaciones>
-        <asignacion grupo="2BHA" curso="2BACH" materia="FIS"/>
-      </asignaciones>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
     </actividad>
   </actividades>
 
   <sesiones>
-    <sesion id="S001" dia="1" tramo="T01" actividad="A001"/>
+    <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
   </sesiones>
 </fushe>

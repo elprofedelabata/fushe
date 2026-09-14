@@ -2,7 +2,7 @@
 
 **Formato Unificado Simplificado de Horarios Escolares**
 
-FUSHE es un formato abierto basado en XML para representar horarios escolares sin depender de una aplicación concreta. Su objetivo es facilitar el intercambio entre hojas de cálculo, generadores de horarios y plataformas de gestión educativa como Séneca, Peñalara, HorW o FET.
+FUSHE es un formato abierto basado en XML para representar horarios escolares ya resueltos sin depender de una aplicación concreta. Su objetivo es facilitar el intercambio entre hojas de cálculo, generadores de horarios y plataformas de gestión educativa como Séneca, Peñalara, HorW o FET.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -17,28 +17,57 @@ FUSHE es un formato abierto basado en XML para representar horarios escolares si
     </dias>
   </estructura>
 
-  <tramos>
-    <tramo id="T01">
-      <referencia>1ª hora</referencia>
-      <inicio>08:00:00</inicio>
-      <fin>09:00:00</fin>
-    </tramo>
-  </tramos>
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Horario general</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>1.ª hora</referencia>
+          <definicion>
+            <inicio>08:00:00</inicio>
+            <fin>09:00:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
+
+  <profesores>
+    <profesor id="P001">
+      <nombre>Pepe Pérez</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>2.º BHA</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>Aula 211</nombre>
+    </espacio>
+  </espacios>
 
   <actividades>
-    <actividad id="A001" categoria="lectiva" tipo="docencia">
+    <actividad id="A001" tipo="docencia">
       <nombre>Física</nombre>
       <profesores>
-        <profesor ref="PEPE"/>
+        <profesor ref="P001"/>
       </profesores>
-      <asignaciones>
-        <asignacion grupo="2BHA" curso="2BACH" materia="FIS"/>
-      </asignaciones>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
     </actividad>
   </actividades>
 
   <sesiones>
-    <sesion id="S001" dia="1" tramo="T01" actividad="A001"/>
+    <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
   </sesiones>
 </fushe>
 ```
@@ -47,15 +76,16 @@ FUSHE es un formato abierto basado en XML para representar horarios escolares si
 
 FUSHE se encuentra en fase de diseño. La sintaxis y el modelo todavía pueden cambiar antes de publicar una primera versión estable.
 
-La [especificación en desarrollo](docs/estandar-horario.md) distingue las decisiones acordadas de las propuestas que deben validarse con más aplicaciones y archivos reales.
+La [especificación en desarrollo](docs/estandar-horario.md) recoge las decisiones actuales y los aspectos que deben contrastarse con más aplicaciones y archivos reales.
 
 ## Principios
 
 - Independiente de cualquier programa de horarios.
 - Basado en XML y compatible con herramientas estándar.
-- Extensible sin perder campos desconocidos.
-- Apto para herramientas locales y adaptadores específicos.
+- Centrado en el horario final, no en las restricciones usadas para generarlo.
+- Compatible con varios perfiles, profesores, grupos y espacios.
 - Separación entre actividades y sus colocaciones semanales.
+- Preparado para adaptadores específicos de cada aplicación.
 
 ## Contenido actual
 
