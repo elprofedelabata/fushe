@@ -1,0 +1,18 @@
+fushe|1.0
+
+[estructura]
+dias|1,2,3,4,5
+
+[tramos]
+T01|1ª hora|08:00|09:00
+
+[actividad A001]
+referencia|FIS-2BACH
+nombre|Física - 2.º Bachillerato
+categoria|lectiva
+tipo|docencia
+profesor|PEPE
+asignacion|2BHA|2BACH|FIS
+
+[sesiones]
+S001|1|T01|A001
