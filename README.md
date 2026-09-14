@@ -86,6 +86,7 @@ El repositorio incluye una implementación inicial en TypeScript con:
 - validación estructural y de referencias;
 - extracción segura de contenedores `.xrho`;
 - conversión del horario final de Peñalara;
+- conversión del horario final generado por FET;
 - anonimización de nombres de profesores.
 
 Instalación y pruebas:
@@ -107,7 +108,16 @@ Para crear una muestra publicable sin nombres de profesores:
 npm run convertir:penalara -- "entrada.xrho" "salida.fushe" --anonimizar
 ```
 
-El conversor no reemplaza un archivo existente salvo que se añada `--sobrescribir`. Solo traslada el horario resuelto y, si encuentra una colocación que no puede relacionar de forma segura, termina con un error en lugar de descartarla silenciosamente.
+Conversión de la solución generada por FET:
+
+```shell
+npm run convertir:fet -- "entrada_data_and_timetable.fet" "salida.fushe"
+```
+
+Los conversores no reemplazan un archivo existente salvo que se añada
+`--sobrescribir`. Solo trasladan el horario resuelto y, si encuentran una
+colocación que no pueden relacionar de forma segura, terminan con un error en
+lugar de descartarla silenciosamente.
 
 ## Principios
 
@@ -122,9 +132,10 @@ El conversor no reemplaza un archivo existente salvo que se añada `--sobrescrib
 
 - `docs/estandar-horario.md`: especificación viva del formato.
 - `docs/mapeo-penalara.md`: correspondencia aplicada por el conversor de Peñalara.
+- `docs/mapeo-fet.md`: correspondencia aplicada por el conversor de FET.
 - `examples/horario-minimo.fushe`: ejemplo mínimo provisional.
 - `examples/penalara-ficticio.fushe`: ejemplo completamente ficticio con estructuras observadas en Peñalara.
-- `src/`: núcleo FUSHE y adaptador de Peñalara en TypeScript.
+- `src/`: núcleo FUSHE y adaptadores de Peñalara y FET en TypeScript.
 - `tests/`: pruebas unitarias y reconciliación opcional de muestras privadas.
 
 ## Licencias

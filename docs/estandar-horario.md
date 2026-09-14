@@ -3,7 +3,7 @@
 ## Estado del documento
 
 - Estado: borrador vivo.
-- Revisión del documento: 0.4.
+- Revisión del documento: 0.5.
 - Nombre: FUSHE, Formato Unificado Simplificado de Horarios Escolares.
 - Extensión: `.fushe`.
 - Representación canónica: XML.
@@ -495,7 +495,31 @@ Archivo analizado: `ejemploDosMarcosHorariosR1.xrho`.
 
 Esos últimos datos son importantes para volver a generar el proyecto, pero no para intercambiar su horario final; por ello quedan fuera de FUSHE Core.
 
-## 15. Seguridad
+## 15. Hallazgos de la muestra de FET
+
+Carpeta analizada: salida anonimizada generada por FET 7.10.4.
+
+- FET publica el horario como una carpeta de vistas HTML y XML.
+- `*_data_and_timetable.fet` es autocontenido: conserva los catálogos, las
+  actividades y todas las colocaciones finales.
+- La solución se expresa mediante restricciones activas al 100 % de hora inicial
+  y, cuando existe, aula preferida para cada actividad.
+- FET usa un único catálogo global de días y tramos, que se convierte en un
+  perfil FUSHE.
+- Las horas reales no son obligatorias en FET. En la muestra pueden extraerse de
+  `Hour/Long_Name`; otros archivos requerirán que el usuario las indique.
+- `Activity_Group_Id` reúne las partes semanales de una misma actividad lógica.
+- Una duración superior a un periodo puede representarse mediante varias
+  sesiones FUSHE consecutivas que referencian la misma actividad.
+- Las etiquetas de actividad no tienen semántica universal. Las coincidentes con
+  tipos FUSHE pueden clasificarse y las demás necesitan correspondencia externa.
+- Las 1721 colocaciones de la muestra son representables: producen 599
+  actividades lógicas, 96 profesores usados, 152 grupos usados y 25 espacios.
+
+Las restricciones, estadísticas, semillas, preferencias y datos de presentación
+son importantes para regenerar el proyecto, pero quedan fuera de FUSHE Core.
+
+## 16. Seguridad
 
 Las implementaciones deben:
 
@@ -508,7 +532,7 @@ Las implementaciones deben:
 
 Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recursos.
 
-## 16. Extensiones posibles todavía no diseñadas
+## 17. Extensiones posibles todavía no diseñadas
 
 - Curso, enseñanza y materia como datos estructurados.
 - Identificadores externos por entidad y conversiones reversibles.
@@ -523,7 +547,7 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 - Namespaces XML para extensiones desarrolladas por terceros.
 - Un formato o extensión independiente para proyectos de planificación.
 
-## 17. Ejemplo completo provisional
+## 18. Ejemplo completo provisional
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -632,10 +656,10 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 </fushe>
 ```
 
-## 18. Decisiones abiertas
+## 19. Decisiones abiertas
 
 1. Elegir y publicar el namespace XML canónico.
-2. Validar el modelo con muestras de HorW y FET.
+2. Validar el modelo con una muestra de HorW.
 3. Definir un vocabulario inicial de tipos de actividad y tramo sin ligarlo a Séneca.
 4. Decidir cómo representar una sesión que ocupe varios tramos como un único bloque.
 5. Evaluar si curso, enseñanza y materia necesitan estructura propia en una versión posterior.
@@ -643,7 +667,15 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 7. Preparar el primer XML Schema.
 8. Preparar ejemplos canónicos obtenidos de cada programa analizado.
 
-## 19. Historial
+## 20. Historial
+
+### Revisión 0.5
+
+- Contraste del modelo con una salida completa de FET 7.10.4.
+- Identificación de `*_data_and_timetable.fet` como entrada autocontenida.
+- Documentación de actividades divididas, duración y tipos no universales.
+- Confirmación de que las 1721 colocaciones de la muestra son representables.
+- Implementación inicial del adaptador FET a FUSHE.
 
 ### Revisión 0.4
 

@@ -13,13 +13,18 @@
     "./penalara": {
       "types": "./dist/src/penalara/index.d.ts",
       "require": "./dist/src/penalara/index.js"
+    },
+    "./fet": {
+      "types": "./dist/src/fet/index.d.ts",
+      "require": "./dist/src/fet/index.js"
     }
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && node --test dist/tests/fushe.test.js dist/tests/penalara.test.js",
+    "test": "npm run build && node --test dist/tests/fushe.test.js dist/tests/penalara.test.js dist/tests/fet.test.js",
     "check": "npm test",
-    "convertir:penalara": "npm run build && node dist/src/cli/convertir-penalara.js"
+    "convertir:penalara": "npm run build && node dist/src/cli/convertir-penalara.js",
+    "convertir:fet": "npm run build && node dist/src/cli/convertir-fet.js"
   },
   "keywords": [
     "fushe",
