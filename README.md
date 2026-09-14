@@ -127,6 +127,21 @@ El conversor no reemplaza un archivo existente salvo que se añada `--sobrescrib
 - `src/`: núcleo FUSHE y adaptador de Peñalara en TypeScript.
 - `tests/`: pruebas unitarias y reconciliación opcional de muestras privadas.
 
-## Licencia
+## Licencias
 
-La licencia del estándar y de su futura implementación de referencia está pendiente de decisión.
+FUSHE utiliza licencias distintas según el tipo de contenido:
+
+- El código fuente, las pruebas y las herramientas de referencia se publican bajo la
+  [Mozilla Public License 2.0](LICENSE).
+- La especificación, la documentación, los diagramas y los archivos de ejemplo
+  —incluido este README— se publican bajo
+  [Creative Commons Atribución-CompartirIgual 4.0 Internacional](LICENSE-DOCS).
+
+Salvo indicación expresa en un archivo concreto, esta distribución se aplica a
+`src/`, `tests/` y el código generado en `dist/` por una parte, y a
+`docs/` y `examples/` por otra. Las dependencias de terceros conservan sus
+propias licencias.
+
+La atribución de los contenidos CC BY-SA puede indicarse como «FUSHE y sus
+colaboradores», incluyendo un enlace a este repositorio, otro a la licencia e
+indicando si se han realizado cambios.
