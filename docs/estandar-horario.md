@@ -497,7 +497,8 @@ Esos últimos datos son importantes para volver a generar el proyecto, pero no p
 
 ## 15. Hallazgos de la muestra de FET
 
-Carpeta analizada: salida anonimizada generada por FET 7.10.4.
+Carpeta analizada: salida generada por FET 7.10.4. Se publica una copia
+anonimizada junto con el FUSHE resultante en `examples/fet/`.
 
 - FET publica el horario como una carpeta de vistas HTML y XML.
 - `*_data_and_timetable.fet` es autocontenido: conserva los catálogos, las
@@ -676,6 +677,7 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 - Documentación de actividades divididas, duración y tipos no universales.
 - Confirmación de que las 1721 colocaciones de la muestra son representables.
 - Implementación inicial del adaptador FET a FUSHE.
+- Publicación de un par FET/FUSHE anonimizado y reproducible.
 
 ### Revisión 0.4
 

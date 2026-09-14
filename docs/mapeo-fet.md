@@ -116,6 +116,25 @@ Se descartan deliberadamente:
 Esta información puede ser necesaria para volver a generar el proyecto, pero no
 para representar el horario final resuelto.
 
+## Muestra pública reproducible
+
+El repositorio incluye el par:
+
+- `examples/fet/horario-ficticio-data-and-timetable.fet`: entrada FET
+  anonimizada;
+- `examples/fet/horario-ficticio.fushe`: salida canónica generada por el
+  conversor.
+
+Puede regenerarse con:
+
+```shell
+npm run convertir:fet -- "examples/fet/horario-ficticio-data-and-timetable.fet" "examples/fet/horario-ficticio.fushe" --sobrescribir
+```
+
+Una prueba automatizada exige que el resultado sea idéntico al archivo
+publicado. Esto permite comparar la fuente y su representación FUSHE, además de
+detectar cambios accidentales en futuras versiones del conversor.
+
 ## Reconciliación de la muestra
 
 La muestra anonimizada analizada contiene:
@@ -128,4 +147,7 @@ La muestra anonimizada analizada contiene:
 - 1721 sesiones FUSHE: 1494 de docencia y 227 de guardia;
 - ninguna referencia rota ni sesión en un día o tramo inexistente.
 
-La carpeta original no se incorpora al repositorio público.
+El archivo original sin anonimizar no se incorpora al repositorio público. La
+copia publicada sustituye el nombre del centro y todos los identificadores,
+nombres visibles y códigos de docentes, incluidas sus apariciones en
+comentarios. No contiene rutas locales, usuarios, correos ni teléfonos.

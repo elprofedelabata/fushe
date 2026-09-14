@@ -156,50 +156,54 @@ test("rechaza DTD y entidades en archivos FET", () => {
   assert.throws(() => convertirFetAFushe(peligroso), /DTD no están permitidos/);
 });
 
-const rutaMuestraPrivada = process.env.FUSHE_FET_MUESTRA;
-test(
-  "reconcilia la muestra FET privada completa",
-  { skip: rutaMuestraPrivada ? false : "FUSHE_FET_MUESTRA no está definida" },
-  () => {
-    const documento = convertirFetAFushe(readFileSync(rutaMuestraPrivada!), {
-      nombreArchivo: rutaMuestraPrivada,
-    });
-    assert.deepEqual(validarFushe(documento), []);
-    assert.deepEqual(documento.estructura.dias, [1, 2, 3, 4, 5]);
-    assert.deepEqual(documento.perfiles.map((perfil) => perfil.tramos.length), [15]);
-    assert.equal(documento.perfiles[0].tramos.filter((tramo) => tramo.tipo === "recreo").length, 3);
-    assert.equal(documento.profesores?.length, 96);
-    assert.equal(documento.grupos?.length, 152);
-    assert.equal(documento.espacios?.length, 25);
-    assert.equal(documento.actividades.length, 599);
-    assert.equal(documento.sesiones.length, 1721);
+const rutaMuestraPublica = "examples/fet/horario-ficticio-data-and-timetable.fet";
+const rutaResultadoPublicado = "examples/fet/horario-ficticio.fushe";
+test("reproduce exactamente la muestra FET pública", () => {
+  const entrada = readFileSync(rutaMuestraPublica, "utf8");
+  assert.match(entrada, /<Institution_Name>Centro educativo ficticio FUSHE<\/Institution_Name>/);
+  assert.equal((entrada.match(/<Name>DOC\d{3}<\/Name>/g) ?? []).length, 98);
+  assert.equal((entrada.match(/<Long_Name>Docente \d{3}<\/Long_Name>/g) ?? []).length, 98);
+  assert.doesNotMatch(entrada, /[A-Z]:\\|Users[/\\]|AppData|@[a-z0-9]/i);
 
-    const actividadesPorTipo = documento.actividades.reduce<Record<string, number>>(
-      (total, actividad) => {
-        total[actividad.tipo] = (total[actividad.tipo] ?? 0) + 1;
-        return total;
-      },
-      {},
-    );
-    assert.deepEqual(actividadesPorTipo, { docencia: 510, guardia: 89 });
+  const documento = convertirFetAFushe(entrada, {
+    nombreArchivo: rutaMuestraPublica,
+  });
+  assert.deepEqual(validarFushe(documento), []);
+  assert.deepEqual(documento.estructura.dias, [1, 2, 3, 4, 5]);
+  assert.deepEqual(documento.perfiles.map((perfil) => perfil.tramos.length), [15]);
+  assert.equal(documento.perfiles[0].tramos.filter((tramo) => tramo.tipo === "recreo").length, 3);
+  assert.equal(documento.profesores?.length, 96);
+  assert.equal(documento.grupos?.length, 152);
+  assert.equal(documento.espacios?.length, 25);
+  assert.equal(documento.actividades.length, 599);
+  assert.equal(documento.sesiones.length, 1721);
 
-    const tipoPorActividad = new Map(
-      documento.actividades.map((actividad) => [actividad.id, actividad.tipo]),
-    );
-    const sesionesPorTipo = documento.sesiones.reduce<Record<string, number>>(
-      (total, sesion) => {
-        const tipo = tipoPorActividad.get(sesion.actividad)!;
-        total[tipo] = (total[tipo] ?? 0) + 1;
-        return total;
-      },
-      {},
-    );
-    assert.deepEqual(sesionesPorTipo, { docencia: 1494, guardia: 227 });
-    assert.ok(documento.profesores?.every((profesor) => /^Profe\d{3}$/.test(profesor.nombre)));
+  const actividadesPorTipo = documento.actividades.reduce<Record<string, number>>(
+    (total, actividad) => {
+      total[actividad.tipo] = (total[actividad.tipo] ?? 0) + 1;
+      return total;
+    },
+    {},
+  );
+  assert.deepEqual(actividadesPorTipo, { docencia: 510, guardia: 89 });
 
-    const releido = leerFushe(serializarFushe(documento));
-    assert.deepEqual(validarFushe(releido), []);
-    assert.equal(releido.actividades.length, 599);
-    assert.equal(releido.sesiones.length, 1721);
-  },
-);
+  const tipoPorActividad = new Map(
+    documento.actividades.map((actividad) => [actividad.id, actividad.tipo]),
+  );
+  const sesionesPorTipo = documento.sesiones.reduce<Record<string, number>>(
+    (total, sesion) => {
+      const tipo = tipoPorActividad.get(sesion.actividad)!;
+      total[tipo] = (total[tipo] ?? 0) + 1;
+      return total;
+    },
+    {},
+  );
+  assert.deepEqual(sesionesPorTipo, { docencia: 1494, guardia: 227 });
+  assert.ok(documento.profesores?.every((profesor) => /^Docente \d{3}$/.test(profesor.nombre)));
+
+  const releido = leerFushe(serializarFushe(documento));
+  assert.deepEqual(validarFushe(releido), []);
+  assert.equal(releido.actividades.length, 599);
+  assert.equal(releido.sesiones.length, 1721);
+  assert.equal(serializarFushe(documento), readFileSync(rutaResultadoPublicado, "utf8"));
+});
