@@ -7,7 +7,7 @@
 - Alcance: horario final resuelto.
 - Fuera de alcance: reconstrucción del proyecto de planificación de Peñalara.
 
-El archivo de muestra es un contenedor GZIP. Al descomprimirlo contiene una cabecera binaria, un documento XML `datosGHC` codificado en ISO-8859-1 y un bloque binario posterior. El conversor localiza el documento XML por sus etiquetas de apertura y cierre; no interpreta ni publica los bloques binarios.
+El archivo de muestra es un contenedor GZIP. Al descomprimirlo contiene una cabecera binaria, un documento XML `datosGHC` codificado en ISO-8859-1 y un bloque binario posterior. El conversor localiza el documento XML por sus etiquetas de apertura y cierre; no interpreta ni traslada los bloques binarios al documento FUSHE.
 
 ## Correspondencia
 
@@ -75,6 +75,29 @@ Se descartan deliberadamente:
 - criterios, penalizaciones y opciones del generador;
 - rutas locales, nombres de equipo, informes y presentación.
 
+## Muestra pública reproducible
+
+El repositorio contiene el par de comparación:
+
+- `examples/penalara/horario-anonimizado.xrho`: entrada XRHO anonimizada;
+- `examples/penalara/horario-anonimizado.fushe`: salida canónica generada por el conversor.
+
+Puede regenerarse con:
+
+```shell
+npm run convertir:penalara -- "examples/penalara/horario-anonimizado.xrho" "examples/penalara/horario-anonimizado.fushe" --sobrescribir
+```
+
+La anonimización sustituye los nombres e identificadores de diez docentes y,
+en el bloque binario propietario, el usuario de la ruta local, el nombre del
+equipo, el centro y la localidad. Las sustituciones del contenedor conservan la
+longitud original en bytes para no alterar sus posiciones internas; por eso los
+identificadores visibles de docente tienen longitudes diferentes. El archivo
+original sin anonimizar no se publica.
+
+La prueba automatizada convierte de nuevo el XRHO público y exige que el FUSHE
+obtenido coincida byte por byte con el archivo publicado.
+
 ## Reconciliación de la muestra
 
 La conversión se considera correcta cuando produce:
@@ -85,5 +108,3 @@ La conversión se considera correcta cuando produce:
 - 48 actividades: 38 lectivas, 3 reuniones, 3 guardias y 4 complementarias;
 - 199 sesiones: 116 lectivas, 3 reuniones, 60 guardias y 20 complementarias;
 - ninguna referencia rota ni sesión en un día o tramo inexistente.
-
-La muestra original no se incorpora al repositorio público porque contiene datos personales y metadatos locales.

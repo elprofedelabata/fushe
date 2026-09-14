@@ -135,9 +135,10 @@ lugar de descartarla silenciosamente.
 - `docs/mapeo-fet.md`: correspondencia aplicada por el conversor de FET.
 - `examples/horario-minimo.fushe`: ejemplo mínimo provisional.
 - `examples/penalara-ficticio.fushe`: ejemplo completamente ficticio con estructuras observadas en Peñalara.
+- `examples/penalara/`: entrada XRHO anonimizada y resultado FUSHE reproducible.
 - `examples/fet/`: entrada FET anonimizada y resultado FUSHE reproducible.
 - `src/`: núcleo FUSHE y adaptadores de Peñalara y FET en TypeScript.
-- `tests/`: pruebas unitarias y reconciliación opcional de muestras privadas.
+- `tests/`: pruebas unitarias y reproducción exacta de las muestras públicas.
 
 ## Licencias
 

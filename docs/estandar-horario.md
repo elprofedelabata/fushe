@@ -482,7 +482,8 @@ Como FUSHE Core no conserva curso y materia como catálogos independientes, una 
 
 ## 14. Hallazgos de la muestra de Peñalara
 
-Archivo analizado: `ejemploDosMarcosHorariosR1.xrho`.
+Archivo analizado: `ejemploDosMarcosHorariosR1.xrho`. Se publica una copia
+anonimizada junto con el FUSHE resultante en `examples/penalara/`.
 
 - La muestra es un contenedor GZIP y no está cifrada.
 - Contiene XML con raíz `datosGHC` y versión `20230206`, además de un bloque binario relacionado aparentemente con informes y presentación.
@@ -678,6 +679,7 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 - Confirmación de que las 1721 colocaciones de la muestra son representables.
 - Implementación inicial del adaptador FET a FUSHE.
 - Publicación de un par FET/FUSHE anonimizado y reproducible.
+- Publicación de un par XRHO/FUSHE anonimizado y reproducible para Peñalara.
 
 ### Revisión 0.4
 

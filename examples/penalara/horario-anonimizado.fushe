@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fushe version="1.0">
+  <metadatos>
+    <titulo>Horario convertido desde Peñalara</titulo>
+    <generador nombre="FUSHE" version="0.1.0"/>
+    <origen aplicacion="Peñalara GHC" version="20230206" archivo="horario-anonimizado.xrho"/>
+  </metadatos>
+
+  <estructura>
+    <dias>
+      <dia numero="1"/>
+      <dia numero="2"/>
+      <dia numero="3"/>
+      <dia numero="4"/>
+      <dia numero="5"/>
+    </dias>
+  </estructura>
+
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Marco A</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>1</referencia>
+          <definicion>
+            <inicio>08:30:00</inicio>
+            <fin>09:20:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02" tipo="lectivo">
+          <referencia>2</referencia>
+          <definicion>
+            <inicio>09:25:00</inicio>
+            <fin>10:15:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T03" tipo="recreo">
+          <referencia>R1</referencia>
+          <definicion>
+            <inicio>10:15:00</inicio>
+            <fin>10:30:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T04" tipo="lectivo">
+          <referencia>3</referencia>
+          <definicion>
+            <inicio>10:30:00</inicio>
+            <fin>11:20:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T05" tipo="lectivo">
+          <referencia>4</referencia>
+          <definicion>
+            <inicio>11:25:00</inicio>
+            <fin>12:15:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T06" tipo="recreo">
+          <referencia>R2</referencia>
+          <definicion>
+            <inicio>12:15:00</inicio>
+            <fin>12:30:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T07" tipo="lectivo">
+          <referencia>5</referencia>
+          <definicion>
+            <inicio>12:30:00</inicio>
+            <fin>13:20:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T08" tipo="lectivo">
+          <referencia>6</referencia>
+          <definicion>
+            <inicio>13:25:00</inicio>
+            <fin>14:15:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+    <perfil id="PH02">
+      <nombre>Marco B</nombre>
+      <tramos>
+        <tramo id="T01" tipo="lectivo">
+          <referencia>B1</referencia>
+          <definicion>
+            <inicio>09:00:00</inicio>
+            <fin>09:50:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02" tipo="lectivo">
+          <referencia>B2</referencia>
+          <definicion>
+            <inicio>09:55:00</inicio>
+            <fin>10:45:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T03" tipo="recreo">
+          <referencia>S1</referencia>
+          <definicion>
+            <inicio>10:45:00</inicio>
+            <fin>11:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T04" tipo="lectivo">
+          <referencia>B3</referencia>
+          <definicion>
+            <inicio>11:00:00</inicio>
+            <fin>11:50:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T05" tipo="lectivo">
+          <referencia>B4</referencia>
+          <definicion>
+            <inicio>11:55:00</inicio>
+            <fin>12:45:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T06" tipo="lectivo">
+          <referencia>B5</referencia>
+          <definicion>
+            <inicio>12:50:00</inicio>
+            <fin>13:40:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T07" tipo="mediodia">
+          <referencia>M5</referencia>
+          <definicion>
+            <inicio>13:40:00</inicio>
+            <fin>16:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T08" tipo="lectivo">
+          <referencia>B6</referencia>
+          <definicion>
+            <inicio>16:00:00</inicio>
+            <fin>16:50:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T09" tipo="lectivo">
+          <referencia>B7</referencia>
+          <definicion>
+            <inicio>16:55:00</inicio>
+            <fin>17:45:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
+
+  <profesores>
+    <profesor id="P001">
+      <nombre>Docente 001</nombre>
+    </profesor>
+    <profesor id="P002">
+      <nombre>Docente 002</nombre>
+    </profesor>
+    <profesor id="P003">
+      <nombre>Docente 003</nombre>
+    </profesor>
+    <profesor id="P004">
+      <nombre>Docente 004</nombre>
+    </profesor>
+    <profesor id="P005">
+      <nombre>Docente 005</nombre>
+    </profesor>
+    <profesor id="P006">
+      <nombre>Docente 006</nombre>
+    </profesor>
+    <profesor id="P007">
+      <nombre>Docente 007</nombre>
+    </profesor>
+    <profesor id="P008">
+      <nombre>Docente 008</nombre>
+    </profesor>
+    <profesor id="P009">
+      <nombre>Docente 009</nombre>
+    </profesor>
+    <profesor id="P010">
+      <nombre>Docente 010</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>1º FLA</nombre>
+    </grupo>
+    <grupo id="G002">
+      <nombre>1º FLB</nombre>
+    </grupo>
+    <grupo id="G003">
+      <nombre>3º A</nombre>
+    </grupo>
+    <grupo id="G004">
+      <nombre>3º B</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>A-1</nombre>
+    </espacio>
+    <espacio id="E002">
+      <nombre>A-2</nombre>
+    </espacio>
+    <espacio id="E003">
+      <nombre>A-23</nombre>
+    </espacio>
+    <espacio id="E004">
+      <nombre>A-31</nombre>
+    </espacio>
+    <espacio id="E005">
+      <nombre>Aula Música</nombre>
+    </espacio>
+    <espacio id="E006">
+      <nombre>Gimnasio</nombre>
+    </espacio>
+    <espacio id="E007">
+      <nombre>6</nombre>
+    </espacio>
+  </espacios>
+
+  <actividades>
+    <actividad id="A001" tipo="docencia">
+      <referencia>CUL. CLAS.</referencia>
+      <nombre>Cultura Clásica</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A002" tipo="docencia">
+      <referencia>FRANCÉS</referencia>
+      <nombre>Francés</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A003" tipo="docencia">
+      <referencia>INFORMÁTICA</referencia>
+      <nombre>Informática</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A004" tipo="docencia">
+      <referencia>CUL. CLAS.</referencia>
+      <nombre>Cultura Clásica</nombre>
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A005" tipo="docencia">
+      <referencia>FRANCÉS</referencia>
+      <nombre>Francés</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A006" tipo="docencia">
+      <referencia>INFORMÁTICA</referencia>
+      <nombre>Informática</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A007" tipo="docencia">
+      <referencia>ED.FIS.</referencia>
+      <nombre>Educación Física</nombre>
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A008" tipo="docencia">
+      <referencia>ED.FIS.</referencia>
+      <nombre>Educación Física</nombre>
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A009" tipo="docencia">
+      <referencia>For. Lab. 1</referencia>
+      <nombre>For.Lab. 1</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </actividad>
+    <actividad id="A010" tipo="docencia">
+      <referencia>For. Lab. 1</referencia>
+      <nombre>For.Lab. 1</nombre>
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+    <actividad id="A011" tipo="docencia">
+      <referencia>For. Lab. 2</referencia>
+      <nombre>For. Lab. 2</nombre>
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </actividad>
+    <actividad id="A012" tipo="docencia">
+      <referencia>For. Lab. 2</referencia>
+      <nombre>For. Lab. 2</nombre>
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+    <actividad id="A013" tipo="docencia">
+      <referencia>For. Lab. 3</referencia>
+      <nombre>For. Lab 3</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </actividad>
+    <actividad id="A014" tipo="docencia">
+      <referencia>For. Lab. 3</referencia>
+      <nombre>For. Lab 3</nombre>
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+    <actividad id="A015" tipo="docencia">
+      <referencia>INGLÉS</referencia>
+      <nombre>Inglés</nombre>
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A016" tipo="docencia">
+      <referencia>INGLÉS</referencia>
+      <nombre>Inglés</nombre>
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A017" tipo="docencia">
+      <referencia>LENGUA</referencia>
+      <nombre>Lengua Española</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A018" tipo="docencia">
+      <referencia>LENGUA</referencia>
+      <nombre>Lengua Española</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A019" tipo="docencia">
+      <referencia>MATEMÁTICAS</referencia>
+      <nombre>Matemáticas</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A020" tipo="docencia">
+      <referencia>MATEMÁTICAS</referencia>
+      <nombre>Matemáticas</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A021" tipo="docencia">
+      <referencia>MÚSICA</referencia>
+      <nombre>Música</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A022" tipo="docencia">
+      <referencia>MÚSICA</referencia>
+      <nombre>Música</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A023" tipo="docencia">
+      <referencia>NATURAL</referencia>
+      <nombre>Naturaleza</nombre>
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A024" tipo="docencia">
+      <referencia>NATURAL</referencia>
+      <nombre>Naturaleza</nombre>
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A025" tipo="docencia">
+      <referencia>Orientación</referencia>
+      <nombre>Orientación</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </actividad>
+    <actividad id="A026" tipo="docencia">
+      <referencia>Orientación</referencia>
+      <nombre>Orientación</nombre>
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </actividad>
+    <actividad id="A027" tipo="docencia">
+      <referencia>PLAS Y VIS</referencia>
+      <nombre>Plástica y Visual</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A028" tipo="docencia">
+      <referencia>PLAS Y VIS</referencia>
+      <nombre>Plástica y Visual</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A029" tipo="docencia">
+      <referencia>RELIG</referencia>
+      <nombre>Religión</nombre>
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A030" tipo="docencia">
+      <referencia>RELIG</referencia>
+      <nombre>Religión</nombre>
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A031" tipo="docencia">
+      <referencia>SOCIAL</referencia>
+      <nombre>Social</nombre>
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A032" tipo="docencia">
+      <referencia>SOCIAL</referencia>
+      <nombre>Social</nombre>
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A033" tipo="docencia">
+      <referencia>TECNOLOG</referencia>
+      <nombre>Tecnología</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A034" tipo="docencia">
+      <referencia>TECNOLOG</referencia>
+      <nombre>Tecnología</nombre>
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A035" tipo="docencia">
+      <referencia>TECNOLOG</referencia>
+      <nombre>Tecnología</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A036" tipo="docencia">
+      <referencia>TECNOLOG</referencia>
+      <nombre>Tecnología</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A037" tipo="docencia">
+      <referencia>TUTORIA</referencia>
+      <nombre>Tutoría</nombre>
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </actividad>
+    <actividad id="A038" tipo="docencia">
+      <referencia>TUTORIA</referencia>
+      <nombre>Tutoría</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </actividad>
+    <actividad id="A039" tipo="reunion">
+      <referencia>RDP</referencia>
+      <nombre>Edu Fis</nombre>
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </actividad>
+    <actividad id="A040" tipo="reunion">
+      <referencia>RDP</referencia>
+      <nombre>Idiomas</nombre>
+      <profesores>
+        <profesor ref="P002"/>
+        <profesor ref="P004"/>
+      </profesores>
+    </actividad>
+    <actividad id="A041" tipo="reunion">
+      <referencia>RDP</referencia>
+      <nombre>GeneralMate</nombre>
+      <profesores>
+        <profesor ref="P003"/>
+        <profesor ref="P006"/>
+      </profesores>
+    </actividad>
+    <actividad id="A042" tipo="guardia">
+      <referencia>G</referencia>
+      <nombre>G Hor B</nombre>
+    </actividad>
+    <actividad id="A043" tipo="guardia">
+      <referencia>G</referencia>
+      <nombre>Recreos</nombre>
+    </actividad>
+    <actividad id="A044" tipo="guardia">
+      <referencia>G</referencia>
+      <nombre>G Hor A</nombre>
+    </actividad>
+    <actividad id="A045" tipo="complementaria">
+      <referencia>DIR</referencia>
+      <nombre>DIR</nombre>
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </actividad>
+    <actividad id="A046" tipo="complementaria">
+      <referencia>DIR</referencia>
+      <nombre>DIR</nombre>
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </actividad>
+    <actividad id="A047" tipo="complementaria">
+      <referencia>DIR</referencia>
+      <nombre>DIR</nombre>
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </actividad>
+    <actividad id="A048" tipo="complementaria">
+      <referencia>DIR</referencia>
+      <nombre>DIR</nombre>
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </actividad>
+  </actividades>
+
+  <sesiones>
+    <sesion id="S001" dia="1" perfil="PH01" tramo="T01" actividad="A029">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S002" dia="1" perfil="PH01" tramo="T01" actividad="A032">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S003" dia="1" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S004" dia="1" perfil="PH01" tramo="T02" actividad="A023">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S005" dia="1" perfil="PH01" tramo="T02" actividad="A020">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S006" dia="1" perfil="PH01" tramo="T02" actividad="A044">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S007" dia="1" perfil="PH01" tramo="T04" actividad="A019">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S008" dia="1" perfil="PH01" tramo="T04" actividad="A008">
+      <espacios>
+        <espacio ref="E006"/>
+      </espacios>
+    </sesion>
+    <sesion id="S009" dia="1" perfil="PH01" tramo="T04" actividad="A044">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S010" dia="1" perfil="PH01" tramo="T04" actividad="A045"/>
+    <sesion id="S011" dia="1" perfil="PH01" tramo="T04" actividad="A047"/>
+    <sesion id="S012" dia="1" perfil="PH01" tramo="T05" actividad="A005">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S013" dia="1" perfil="PH01" tramo="T05" actividad="A006">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S014" dia="1" perfil="PH01" tramo="T05" actividad="A004">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S015" dia="1" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S016" dia="1" perfil="PH01" tramo="T05" actividad="A045"/>
+    <sesion id="S017" dia="1" perfil="PH01" tramo="T05" actividad="A047"/>
+    <sesion id="S018" dia="1" perfil="PH01" tramo="T07" actividad="A027">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S019" dia="1" perfil="PH01" tramo="T07" actividad="A024">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S020" dia="1" perfil="PH01" tramo="T07" actividad="A045"/>
+    <sesion id="S021" dia="1" perfil="PH01" tramo="T08" actividad="A031">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S022" dia="1" perfil="PH01" tramo="T08" actividad="A016">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S023" dia="1" perfil="PH01" tramo="T03" actividad="A043">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S024" dia="1" perfil="PH01" tramo="T06" actividad="A043">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S025" dia="2" perfil="PH01" tramo="T01" actividad="A023">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S026" dia="2" perfil="PH01" tramo="T01" actividad="A016">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S027" dia="2" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S028" dia="2" perfil="PH01" tramo="T02" actividad="A015">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S029" dia="2" perfil="PH01" tramo="T02" actividad="A018">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S030" dia="2" perfil="PH01" tramo="T02" actividad="A039"/>
+    <sesion id="S031" dia="2" perfil="PH01" tramo="T02" actividad="A044">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S032" dia="2" perfil="PH01" tramo="T04" actividad="A033">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S033" dia="2" perfil="PH01" tramo="T04" actividad="A034">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S034" dia="2" perfil="PH01" tramo="T04" actividad="A044">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S035" dia="2" perfil="PH01" tramo="T04" actividad="A048"/>
+    <sesion id="S036" dia="2" perfil="PH01" tramo="T05" actividad="A033">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S037" dia="2" perfil="PH01" tramo="T05" actividad="A034">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S038" dia="2" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S039" dia="2" perfil="PH01" tramo="T05" actividad="A046"/>
+    <sesion id="S040" dia="2" perfil="PH01" tramo="T05" actividad="A048"/>
+    <sesion id="S041" dia="2" perfil="PH01" tramo="T07" actividad="A001">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S042" dia="2" perfil="PH01" tramo="T07" actividad="A002">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S043" dia="2" perfil="PH01" tramo="T07" actividad="A003">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S044" dia="2" perfil="PH01" tramo="T08" actividad="A032">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S045" dia="2" perfil="PH01" tramo="T08" actividad="A021">
+      <espacios>
+        <espacio ref="E005"/>
+      </espacios>
+    </sesion>
+    <sesion id="S046" dia="2" perfil="PH01" tramo="T03" actividad="A043">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S047" dia="2" perfil="PH01" tramo="T06" actividad="A043">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S048" dia="3" perfil="PH01" tramo="T01" actividad="A015">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S049" dia="3" perfil="PH01" tramo="T01" actividad="A028">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S050" dia="3" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S051" dia="3" perfil="PH01" tramo="T02" actividad="A017">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S052" dia="3" perfil="PH01" tramo="T02" actividad="A020">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S053" dia="3" perfil="PH01" tramo="T02" actividad="A044">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S054" dia="3" perfil="PH01" tramo="T02" actividad="A046"/>
+    <sesion id="S055" dia="3" perfil="PH01" tramo="T04" actividad="A022">
+      <espacios>
+        <espacio ref="E005"/>
+      </espacios>
+    </sesion>
+    <sesion id="S056" dia="3" perfil="PH01" tramo="T04" actividad="A007">
+      <espacios>
+        <espacio ref="E006"/>
+      </espacios>
+    </sesion>
+    <sesion id="S057" dia="3" perfil="PH01" tramo="T04" actividad="A044">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S058" dia="3" perfil="PH01" tramo="T04" actividad="A047"/>
+    <sesion id="S059" dia="3" perfil="PH01" tramo="T05" actividad="A019">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S060" dia="3" perfil="PH01" tramo="T05" actividad="A024">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S061" dia="3" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S062" dia="3" perfil="PH01" tramo="T05" actividad="A048"/>
+    <sesion id="S063" dia="3" perfil="PH01" tramo="T07" actividad="A031">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S064" dia="3" perfil="PH01" tramo="T07" actividad="A030">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S065" dia="3" perfil="PH01" tramo="T07" actividad="A041"/>
+    <sesion id="S066" dia="3" perfil="PH01" tramo="T08" actividad="A037">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S067" dia="3" perfil="PH01" tramo="T08" actividad="A038">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S068" dia="3" perfil="PH01" tramo="T08" actividad="A045"/>
+    <sesion id="S069" dia="3" perfil="PH01" tramo="T03" actividad="A043">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S070" dia="3" perfil="PH01" tramo="T06" actividad="A043">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S071" dia="4" perfil="PH01" tramo="T01" actividad="A029">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S072" dia="4" perfil="PH01" tramo="T01" actividad="A024">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S073" dia="4" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S074" dia="4" perfil="PH01" tramo="T01" actividad="A046"/>
+    <sesion id="S075" dia="4" perfil="PH01" tramo="T02" actividad="A023">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S076" dia="4" perfil="PH01" tramo="T02" actividad="A016">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S077" dia="4" perfil="PH01" tramo="T02" actividad="A044">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S078" dia="4" perfil="PH01" tramo="T02" actividad="A046"/>
+    <sesion id="S079" dia="4" perfil="PH01" tramo="T04" actividad="A021">
+      <espacios>
+        <espacio ref="E005"/>
+      </espacios>
+    </sesion>
+    <sesion id="S080" dia="4" perfil="PH01" tramo="T04" actividad="A008">
+      <espacios>
+        <espacio ref="E006"/>
+      </espacios>
+    </sesion>
+    <sesion id="S081" dia="4" perfil="PH01" tramo="T04" actividad="A044">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S082" dia="4" perfil="PH01" tramo="T05" actividad="A027">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S083" dia="4" perfil="PH01" tramo="T05" actividad="A018">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S084" dia="4" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S085" dia="4" perfil="PH01" tramo="T05" actividad="A047"/>
+    <sesion id="S086" dia="4" perfil="PH01" tramo="T05" actividad="A048"/>
+    <sesion id="S087" dia="4" perfil="PH01" tramo="T07" actividad="A035">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S088" dia="4" perfil="PH01" tramo="T07" actividad="A032">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S089" dia="4" perfil="PH01" tramo="T08" actividad="A017">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S090" dia="4" perfil="PH01" tramo="T08" actividad="A020">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S091" dia="4" perfil="PH01" tramo="T03" actividad="A043">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S092" dia="4" perfil="PH01" tramo="T06" actividad="A043">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S093" dia="5" perfil="PH01" tramo="T01" actividad="A023">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S094" dia="5" perfil="PH01" tramo="T01" actividad="A028">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S095" dia="5" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S096" dia="5" perfil="PH01" tramo="T02" actividad="A017">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S097" dia="5" perfil="PH01" tramo="T02" actividad="A030">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S098" dia="5" perfil="PH01" tramo="T02" actividad="A044">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S099" dia="5" perfil="PH01" tramo="T02" actividad="A047"/>
+    <sesion id="S100" dia="5" perfil="PH01" tramo="T04" actividad="A022">
+      <espacios>
+        <espacio ref="E005"/>
+      </espacios>
+    </sesion>
+    <sesion id="S101" dia="5" perfil="PH01" tramo="T04" actividad="A007">
+      <espacios>
+        <espacio ref="E006"/>
+      </espacios>
+    </sesion>
+    <sesion id="S102" dia="5" perfil="PH01" tramo="T04" actividad="A040"/>
+    <sesion id="S103" dia="5" perfil="PH01" tramo="T04" actividad="A044">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S104" dia="5" perfil="PH01" tramo="T05" actividad="A019">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S105" dia="5" perfil="PH01" tramo="T05" actividad="A024">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S106" dia="5" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S107" dia="5" perfil="PH01" tramo="T05" actividad="A046"/>
+    <sesion id="S108" dia="5" perfil="PH01" tramo="T05" actividad="A048"/>
+    <sesion id="S109" dia="5" perfil="PH01" tramo="T07" actividad="A031">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S110" dia="5" perfil="PH01" tramo="T07" actividad="A036">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S111" dia="5" perfil="PH01" tramo="T07" actividad="A045"/>
+    <sesion id="S112" dia="5" perfil="PH01" tramo="T08" actividad="A015">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S113" dia="5" perfil="PH01" tramo="T08" actividad="A018">
+      <espacios>
+        <espacio ref="E002"/>
+      </espacios>
+    </sesion>
+    <sesion id="S114" dia="5" perfil="PH01" tramo="T03" actividad="A043">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S115" dia="5" perfil="PH01" tramo="T06" actividad="A043">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S116" dia="1" perfil="PH02" tramo="T01" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S117" dia="1" perfil="PH02" tramo="T01" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S118" dia="1" perfil="PH02" tramo="T01" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S119" dia="1" perfil="PH02" tramo="T02" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S120" dia="1" perfil="PH02" tramo="T02" actividad="A010">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S121" dia="1" perfil="PH02" tramo="T02" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S122" dia="1" perfil="PH02" tramo="T04" actividad="A011">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S123" dia="1" perfil="PH02" tramo="T04" actividad="A026">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S124" dia="1" perfil="PH02" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S125" dia="1" perfil="PH02" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S126" dia="1" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S127" dia="1" perfil="PH02" tramo="T08" actividad="A013">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S128" dia="1" perfil="PH02" tramo="T08" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S129" dia="1" perfil="PH02" tramo="T08" actividad="A042">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S130" dia="1" perfil="PH02" tramo="T09" actividad="A013">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S131" dia="1" perfil="PH02" tramo="T09" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S132" dia="2" perfil="PH02" tramo="T01" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S133" dia="2" perfil="PH02" tramo="T01" actividad="A025">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S134" dia="2" perfil="PH02" tramo="T01" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S135" dia="2" perfil="PH02" tramo="T02" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S136" dia="2" perfil="PH02" tramo="T02" actividad="A013">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S137" dia="2" perfil="PH02" tramo="T02" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S138" dia="2" perfil="PH02" tramo="T04" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S139" dia="2" perfil="PH02" tramo="T04" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S140" dia="2" perfil="PH02" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S141" dia="2" perfil="PH02" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S142" dia="2" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S143" dia="2" perfil="PH02" tramo="T08" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S144" dia="2" perfil="PH02" tramo="T08" actividad="A010">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S145" dia="2" perfil="PH02" tramo="T08" actividad="A042">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S146" dia="2" perfil="PH02" tramo="T09" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S147" dia="2" perfil="PH02" tramo="T09" actividad="A010">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S148" dia="3" perfil="PH02" tramo="T01" actividad="A010">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S149" dia="3" perfil="PH02" tramo="T01" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S150" dia="3" perfil="PH02" tramo="T01" actividad="A042">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S151" dia="3" perfil="PH02" tramo="T02" actividad="A010">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S152" dia="3" perfil="PH02" tramo="T02" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S153" dia="3" perfil="PH02" tramo="T02" actividad="A042">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S154" dia="3" perfil="PH02" tramo="T04" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S155" dia="3" perfil="PH02" tramo="T04" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S156" dia="3" perfil="PH02" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S157" dia="3" perfil="PH02" tramo="T05" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S158" dia="3" perfil="PH02" tramo="T05" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S159" dia="3" perfil="PH02" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S160" dia="3" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S161" dia="3" perfil="PH02" tramo="T08" actividad="A013">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S162" dia="3" perfil="PH02" tramo="T08" actividad="A026">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S163" dia="3" perfil="PH02" tramo="T08" actividad="A042">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S164" dia="3" perfil="PH02" tramo="T09" actividad="A013">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S165" dia="3" perfil="PH02" tramo="T09" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S166" dia="4" perfil="PH02" tramo="T01" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S167" dia="4" perfil="PH02" tramo="T01" actividad="A013">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S168" dia="4" perfil="PH02" tramo="T01" actividad="A042">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S169" dia="4" perfil="PH02" tramo="T02" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S170" dia="4" perfil="PH02" tramo="T02" actividad="A013">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S171" dia="4" perfil="PH02" tramo="T02" actividad="A042">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S172" dia="4" perfil="PH02" tramo="T04" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S173" dia="4" perfil="PH02" tramo="T04" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S174" dia="4" perfil="PH02" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S175" dia="4" perfil="PH02" tramo="T05" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S176" dia="4" perfil="PH02" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S177" dia="4" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S178" dia="4" perfil="PH02" tramo="T08" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S179" dia="4" perfil="PH02" tramo="T08" actividad="A010">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S180" dia="4" perfil="PH02" tramo="T09" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S181" dia="4" perfil="PH02" tramo="T09" actividad="A010">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S182" dia="5" perfil="PH02" tramo="T01" actividad="A010">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S183" dia="5" perfil="PH02" tramo="T01" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S184" dia="5" perfil="PH02" tramo="T01" actividad="A042">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S185" dia="5" perfil="PH02" tramo="T02" actividad="A010">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S186" dia="5" perfil="PH02" tramo="T02" actividad="A011">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S187" dia="5" perfil="PH02" tramo="T02" actividad="A042">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S188" dia="5" perfil="PH02" tramo="T04" actividad="A012">
+      <espacios>
+        <espacio ref="E004"/>
+      </espacios>
+    </sesion>
+    <sesion id="S189" dia="5" perfil="PH02" tramo="T04" actividad="A013">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S190" dia="5" perfil="PH02" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S191" dia="5" perfil="PH02" tramo="T05" actividad="A013">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S192" dia="5" perfil="PH02" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S193" dia="5" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S194" dia="5" perfil="PH02" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S195" dia="5" perfil="PH02" tramo="T08" actividad="A025">
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S196" dia="5" perfil="PH02" tramo="T08" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+    <sesion id="S197" dia="5" perfil="PH02" tramo="T08" actividad="A042">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S198" dia="5" perfil="PH02" tramo="T09" actividad="A009">
+      <espacios>
+        <espacio ref="E003"/>
+      </espacios>
+    </sesion>
+    <sesion id="S199" dia="5" perfil="PH02" tramo="T09" actividad="A014">
+      <espacios>
+        <espacio ref="E007"/>
+      </espacios>
+    </sesion>
+  </sesiones>
+</fushe>

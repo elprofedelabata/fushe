@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { gzipSync } from "node:zlib";
+import { gunzipSync, gzipSync } from "node:zlib";
 import {
   leerFushe,
   serializarFushe,
@@ -117,75 +117,93 @@ test("el ejemplo público ficticio es válido", () => {
   assert.ok(documento.profesores?.every((profesor) => /^Docente /.test(profesor.nombre)));
 });
 
-const rutaMuestraPrivada = process.env.FUSHE_XRHO_MUESTRA;
-test(
-  "reconcilia la muestra privada completa",
-  { skip: rutaMuestraPrivada ? false : "FUSHE_XRHO_MUESTRA no está definida" },
-  () => {
-    const documento = convertirXrhoAFushe(readFileSync(rutaMuestraPrivada!), {
-      nombreArchivo: rutaMuestraPrivada,
-    });
-    assert.deepEqual(validarFushe(documento), []);
-    assert.deepEqual(documento.perfiles.map((perfil) => perfil.tramos.length), [8, 9]);
-    assert.equal(documento.profesores?.length, 10);
-    assert.equal(documento.grupos?.length, 4);
-    assert.equal(documento.espacios?.length, 7);
-    assert.equal(documento.actividades.length, 48);
-    assert.equal(documento.sesiones.length, 199);
+const rutaMuestraPublica = "examples/penalara/horario-anonimizado.xrho";
+const rutaResultadoPublicado = "examples/penalara/horario-anonimizado.fushe";
 
-    const tipos = new Map(documento.actividades.map((actividad) => [actividad.id, actividad.tipo]));
-    const sesionesPorTipo = documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
-      const tipo = tipos.get(sesion.actividad)!;
-      total[tipo] = (total[tipo] ?? 0) + 1;
+test("reproduce la muestra pública anonimizada de Peñalara", () => {
+  const muestra = readFileSync(rutaMuestraPublica);
+  const extraido = extraerXmlXrho(muestra);
+  const contenido = gunzipSync(muestra).toString("latin1");
+
+  assert.equal(extraido.bytesCabecera, 51);
+  assert.equal(extraido.bytesPosteriores, 6900);
+  assert.match(contenido, /C:\\Users\\userx\\/);
+  assert.match(contenido, /EQUIPO-FUSHE001/);
+  assert.match(contenido, /Centro FUSHE 1/);
+  assert.match(contenido, /Ciudad/);
+  assert.doesNotMatch(contenido, /LAPTOP-[A-Z0-9]+/);
+
+  const documento = convertirXrhoAFushe(muestra, {
+    nombreArchivo: rutaMuestraPublica,
+  });
+  assert.deepEqual(validarFushe(documento), []);
+  assert.deepEqual(documento.perfiles.map((perfil) => perfil.tramos.length), [8, 9]);
+  assert.equal(documento.profesores?.length, 10);
+  assert.ok(
+    documento.profesores?.every((profesor) => /^Docente \d{3}$/.test(profesor.nombre)),
+  );
+  assert.equal(documento.grupos?.length, 4);
+  assert.equal(documento.espacios?.length, 7);
+  assert.equal(documento.actividades.length, 48);
+  assert.equal(documento.sesiones.length, 199);
+
+  const tipos = new Map(documento.actividades.map((actividad) => [actividad.id, actividad.tipo]));
+  const sesionesPorTipo = documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
+    const tipo = tipos.get(sesion.actividad)!;
+    total[tipo] = (total[tipo] ?? 0) + 1;
+    return total;
+  }, {});
+  assert.deepEqual(sesionesPorTipo, {
+    docencia: 116,
+    guardia: 60,
+    complementaria: 20,
+    reunion: 3,
+  });
+
+  const actividadesPorId = new Map(
+    documento.actividades.map((actividad) => [actividad.id, actividad]),
+  );
+  const contarReferenciasEfectivas = (
+    campo: "profesores" | "grupos",
+  ): Record<string, number> =>
+    documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
+      const actividad = actividadesPorId.get(sesion.actividad)!;
+      for (const referencia of sesion[campo] ?? actividad[campo] ?? []) {
+        total[referencia] = (total[referencia] ?? 0) + 1;
+      }
       return total;
     }, {});
-    assert.deepEqual(sesionesPorTipo, {
-      docencia: 116,
-      guardia: 60,
-      complementaria: 20,
-      reunion: 3,
-    });
 
-    const actividadesPorId = new Map(
-      documento.actividades.map((actividad) => [actividad.id, actividad]),
-    );
-    const contarReferenciasEfectivas = (
-      campo: "profesores" | "grupos",
-    ): Record<string, number> =>
-      documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
-        const actividad = actividadesPorId.get(sesion.actividad)!;
-        for (const referencia of sesion[campo] ?? actividad[campo] ?? []) {
-          total[referencia] = (total[referencia] ?? 0) + 1;
-        }
-        return total;
-      }, {});
+  assert.deepEqual(contarReferenciasEfectivas("profesores"), {
+    P001: 15,
+    P002: 22,
+    P003: 20,
+    P004: 23,
+    P005: 21,
+    P006: 19,
+    P007: 24,
+    P008: 21,
+    P009: 18,
+    P010: 18,
+  });
+  assert.deepEqual(contarReferenciasEfectivas("grupos"), {
+    G003: 36,
+    G004: 36,
+    G002: 27,
+    G001: 27,
+  });
+  assert.deepEqual(
+    documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
+      for (const espacio of sesion.espacios ?? []) {
+        total[espacio] = (total[espacio] ?? 0) + 1;
+      }
+      return total;
+    }, {}),
+    { E001: 29, E002: 25, E003: 16, E004: 20, E005: 4, E006: 4, E007: 18 },
+  );
 
-    assert.deepEqual(contarReferenciasEfectivas("profesores"), {
-      P001: 15,
-      P002: 22,
-      P003: 20,
-      P004: 23,
-      P005: 21,
-      P006: 19,
-      P007: 24,
-      P008: 21,
-      P009: 18,
-      P010: 18,
-    });
-    assert.deepEqual(contarReferenciasEfectivas("grupos"), {
-      G003: 36,
-      G004: 36,
-      G002: 27,
-      G001: 27,
-    });
-    assert.deepEqual(
-      documento.sesiones.reduce<Record<string, number>>((total, sesion) => {
-        for (const espacio of sesion.espacios ?? []) {
-          total[espacio] = (total[espacio] ?? 0) + 1;
-        }
-        return total;
-      }, {}),
-      { E001: 29, E002: 25, E003: 16, E004: 20, E005: 4, E006: 4, E007: 18 },
-    );
-  },
-);
+  assert.equal(
+    serializarFushe(documento),
+    readFileSync(rutaResultadoPublicado, "utf8"),
+  );
+});
