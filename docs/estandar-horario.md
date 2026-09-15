@@ -661,7 +661,7 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 ## 19. Decisiones abiertas
 
 1. Elegir y publicar el namespace XML canónico.
-2. Validar el modelo con una muestra de HorW.
+2. Contrastar el adaptador HorW con otras versiones y configuraciones de exportación.
 3. Definir un vocabulario inicial de tipos de actividad y tramo sin ligarlo a Séneca.
 4. Decidir cómo representar una sesión que ocupe varios tramos como un único bloque.
 5. Evaluar si curso, enseñanza y materia necesitan estructura propia en una versión posterior.
@@ -670,6 +670,14 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 8. Preparar ejemplos canónicos obtenidos de cada programa analizado.
 
 ## 20. Historial
+
+### Revisión 0.6
+
+- Contraste del modelo con las 926 relaciones exportadas desde una muestra ficticia de HorW.
+- Identificación del CSV de colocaciones como entrada estable para el primer adaptador.
+- Documentación de su codificación, campos, agrupación y carencia de horas reales.
+- Implementación inicial del lector y conversor HorW CSV a FUSHE.
+- Publicación de un conjunto CSV/configuración/FUSHE ficticio y reproducible.
 
 ### Revisión 0.5
 

@@ -17,14 +17,19 @@
     "./fet": {
       "types": "./dist/src/fet/index.d.ts",
       "require": "./dist/src/fet/index.js"
+    },
+    "./horw": {
+      "types": "./dist/src/horw/index.d.ts",
+      "require": "./dist/src/horw/index.js"
     }
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && node --test dist/tests/fushe.test.js dist/tests/penalara.test.js dist/tests/fet.test.js",
+    "test": "npm run build && node --test dist/tests/fushe.test.js dist/tests/penalara.test.js dist/tests/fet.test.js dist/tests/horw.test.js",
     "check": "npm test",
     "convertir:penalara": "npm run build && node dist/src/cli/convertir-penalara.js",
-    "convertir:fet": "npm run build && node dist/src/cli/convertir-fet.js"
+    "convertir:fet": "npm run build && node dist/src/cli/convertir-fet.js",
+    "convertir:horw": "npm run build && node dist/src/cli/convertir-horw.js"
   },
   "keywords": [
     "fushe",

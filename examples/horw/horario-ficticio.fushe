@@ -1,0 +1,6255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fushe version="1.0">
+  <metadatos>
+    <titulo>Horario anonimizado</titulo>
+    <generador nombre="FUSHE" version="0.1.0"/>
+    <origen aplicacion="HorW"/>
+  </metadatos>
+
+  <estructura>
+    <dias>
+      <dia numero="1"/>
+      <dia numero="2"/>
+      <dia numero="3"/>
+      <dia numero="4"/>
+      <dia numero="5"/>
+    </dias>
+  </estructura>
+
+  <perfiles>
+    <perfil id="PH01">
+      <nombre>Horario general</nombre>
+      <tramos>
+        <tramo id="T01">
+          <referencia>1.ª hora</referencia>
+          <definicion>
+            <inicio>08:00:00</inicio>
+            <fin>09:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T02">
+          <referencia>2.ª hora</referencia>
+          <definicion>
+            <inicio>09:00:00</inicio>
+            <fin>10:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T03">
+          <referencia>3.ª hora</referencia>
+          <definicion>
+            <inicio>10:00:00</inicio>
+            <fin>11:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T04">
+          <referencia>4.ª hora</referencia>
+          <definicion>
+            <inicio>11:00:00</inicio>
+            <fin>12:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T05">
+          <referencia>5.ª hora</referencia>
+          <definicion>
+            <inicio>12:00:00</inicio>
+            <fin>13:00:00</fin>
+          </definicion>
+        </tramo>
+        <tramo id="T06">
+          <referencia>6.ª hora</referencia>
+          <definicion>
+            <inicio>13:00:00</inicio>
+            <fin>14:00:00</fin>
+          </definicion>
+        </tramo>
+      </tramos>
+    </perfil>
+  </perfiles>
+
+  <profesores>
+    <profesor id="P001">
+      <nombre>Profesor 001</nombre>
+    </profesor>
+    <profesor id="P002">
+      <nombre>Profesor 002</nombre>
+    </profesor>
+    <profesor id="P003">
+      <nombre>Profesor 003</nombre>
+    </profesor>
+    <profesor id="P004">
+      <nombre>Profesor 004</nombre>
+    </profesor>
+    <profesor id="P005">
+      <nombre>Profesor 005</nombre>
+    </profesor>
+    <profesor id="P006">
+      <nombre>Profesor 006</nombre>
+    </profesor>
+    <profesor id="P007">
+      <nombre>Profesor 007</nombre>
+    </profesor>
+    <profesor id="P008">
+      <nombre>Profesor 008</nombre>
+    </profesor>
+    <profesor id="P009">
+      <nombre>Profesor 009</nombre>
+    </profesor>
+    <profesor id="P010">
+      <nombre>Profesor 010</nombre>
+    </profesor>
+    <profesor id="P011">
+      <nombre>Profesor 011</nombre>
+    </profesor>
+    <profesor id="P012">
+      <nombre>Profesor 012</nombre>
+    </profesor>
+    <profesor id="P013">
+      <nombre>Profesor 013</nombre>
+    </profesor>
+    <profesor id="P014">
+      <nombre>Profesor 014</nombre>
+    </profesor>
+    <profesor id="P015">
+      <nombre>Profesor 015</nombre>
+    </profesor>
+    <profesor id="P016">
+      <nombre>Profesor 016</nombre>
+    </profesor>
+    <profesor id="P017">
+      <nombre>Profesor 017</nombre>
+    </profesor>
+    <profesor id="P018">
+      <nombre>Profesor 018</nombre>
+    </profesor>
+    <profesor id="P019">
+      <nombre>Profesor 019</nombre>
+    </profesor>
+    <profesor id="P020">
+      <nombre>Profesor 020</nombre>
+    </profesor>
+    <profesor id="P021">
+      <nombre>Profesor 021</nombre>
+    </profesor>
+    <profesor id="P022">
+      <nombre>Profesor 022</nombre>
+    </profesor>
+    <profesor id="P023">
+      <nombre>Profesor 023</nombre>
+    </profesor>
+    <profesor id="P024">
+      <nombre>Profesor 024</nombre>
+    </profesor>
+    <profesor id="P025">
+      <nombre>Profesor 025</nombre>
+    </profesor>
+    <profesor id="P026">
+      <nombre>Profesor 026</nombre>
+    </profesor>
+    <profesor id="P027">
+      <nombre>Profesor 027</nombre>
+    </profesor>
+    <profesor id="P028">
+      <nombre>Profesor 028</nombre>
+    </profesor>
+    <profesor id="P029">
+      <nombre>Profesor 029</nombre>
+    </profesor>
+    <profesor id="P030">
+      <nombre>Profesor 030</nombre>
+    </profesor>
+    <profesor id="P031">
+      <nombre>Profesor 031</nombre>
+    </profesor>
+    <profesor id="P032">
+      <nombre>Profesor 032</nombre>
+    </profesor>
+    <profesor id="P033">
+      <nombre>Profesor 033</nombre>
+    </profesor>
+    <profesor id="P034">
+      <nombre>Profesor 034</nombre>
+    </profesor>
+    <profesor id="P035">
+      <nombre>Profesor 035</nombre>
+    </profesor>
+    <profesor id="P036">
+      <nombre>Profesor 036</nombre>
+    </profesor>
+    <profesor id="P037">
+      <nombre>Profesor 037</nombre>
+    </profesor>
+    <profesor id="P038">
+      <nombre>Profesor 038</nombre>
+    </profesor>
+    <profesor id="P039">
+      <nombre>Profesor 039</nombre>
+    </profesor>
+    <profesor id="P040">
+      <nombre>Profesor 040</nombre>
+    </profesor>
+  </profesores>
+
+  <grupos>
+    <grupo id="G001">
+      <nombre>3ºE A</nombre>
+    </grupo>
+    <grupo id="G002">
+      <nombre>4ºE A</nombre>
+    </grupo>
+    <grupo id="G003">
+      <nombre>4ºE B</nombre>
+    </grupo>
+    <grupo id="G004">
+      <nombre>4ºEdi</nombre>
+    </grupo>
+    <grupo id="G005">
+      <nombre>1BlA</nombre>
+    </grupo>
+    <grupo id="G006">
+      <nombre>2BlA</nombre>
+    </grupo>
+    <grupo id="G007">
+      <nombre>2BcB</nombre>
+    </grupo>
+    <grupo id="G008">
+      <nombre>1ºE A</nombre>
+    </grupo>
+    <grupo id="G009">
+      <nombre>1ºE B</nombre>
+    </grupo>
+    <grupo id="G010">
+      <nombre>1ºE C</nombre>
+    </grupo>
+    <grupo id="G011">
+      <nombre>1ºE D</nombre>
+    </grupo>
+    <grupo id="G012">
+      <nombre>2ºE A</nombre>
+    </grupo>
+    <grupo id="G013">
+      <nombre>2ºE B</nombre>
+    </grupo>
+    <grupo id="G014">
+      <nombre>2ºE C</nombre>
+    </grupo>
+    <grupo id="G015">
+      <nombre>3ºE B</nombre>
+    </grupo>
+    <grupo id="G016">
+      <nombre>3ºE C</nombre>
+    </grupo>
+    <grupo id="G017">
+      <nombre>4ºE C</nombre>
+    </grupo>
+    <grupo id="G018">
+      <nombre>1BcB</nombre>
+    </grupo>
+    <grupo id="G019">
+      <nombre>3ºE D</nombre>
+    </grupo>
+  </grupos>
+
+  <espacios>
+    <espacio id="E001">
+      <nombre>2.1</nombre>
+    </espacio>
+  </espacios>
+
+  <actividades>
+    <actividad id="A001" tipo="docencia">
+      <referencia>BG</referencia>
+      <nombre>BG</nombre>
+    </actividad>
+    <actividad id="A002" tipo="docencia">
+      <referencia>EPV</referencia>
+      <nombre>EPV</nombre>
+    </actividad>
+    <actividad id="A003" tipo="docencia">
+      <referencia>TEC</referencia>
+      <nombre>TEC</nombre>
+    </actividad>
+    <actividad id="A004" tipo="docencia">
+      <referencia>CSO</referencia>
+      <nombre>CSO</nombre>
+    </actividad>
+    <actividad id="A005" tipo="docencia">
+      <referencia>LCL</referencia>
+      <nombre>LCL</nombre>
+    </actividad>
+    <actividad id="A006" tipo="docencia">
+      <referencia>REL</referencia>
+      <nombre>REL</nombre>
+    </actividad>
+    <actividad id="A007" tipo="docencia">
+      <referencia>ING</referencia>
+      <nombre>ING</nombre>
+    </actividad>
+    <actividad id="A008" tipo="docencia">
+      <referencia>EFI</referencia>
+      <nombre>EFI</nombre>
+    </actividad>
+    <actividad id="A009" tipo="docencia">
+      <referencia>MAT</referencia>
+      <nombre>MAT</nombre>
+    </actividad>
+    <actividad id="A010" tipo="tutoria">
+      <referencia>TUT</referencia>
+      <nombre>Tutoría</nombre>
+    </actividad>
+    <actividad id="A011" tipo="docencia">
+      <referencia>VMO</referencia>
+      <nombre>VMO</nombre>
+    </actividad>
+    <actividad id="A012" tipo="docencia">
+      <referencia>BIO</referencia>
+      <nombre>BIO</nombre>
+    </actividad>
+    <actividad id="A013" tipo="docencia">
+      <referencia>FQU</referencia>
+      <nombre>FQU</nombre>
+    </actividad>
+    <actividad id="A014" tipo="docencia">
+      <referencia>CUL</referencia>
+      <nombre>CUL</nombre>
+    </actividad>
+    <actividad id="A015" tipo="docencia">
+      <referencia>MAB</referencia>
+      <nombre>MAB</nombre>
+    </actividad>
+    <actividad id="A016" tipo="docencia">
+      <referencia>METC</referencia>
+      <nombre>METC</nombre>
+    </actividad>
+    <actividad id="A017" tipo="docencia">
+      <referencia>FYQ</referencia>
+      <nombre>FYQ</nombre>
+    </actividad>
+    <actividad id="A018" tipo="docencia">
+      <referencia>FIL</referencia>
+      <nombre>FIL</nombre>
+    </actividad>
+    <actividad id="A019" tipo="docencia">
+      <referencia>IN1</referencia>
+      <nombre>IN1</nombre>
+    </actividad>
+    <actividad id="A020" tipo="docencia">
+      <referencia>FRA</referencia>
+      <nombre>FRA</nombre>
+    </actividad>
+    <actividad id="A021" tipo="docencia">
+      <referencia>HMC</referencia>
+      <nombre>HMC</nombre>
+    </actividad>
+    <actividad id="A022" tipo="docencia">
+      <referencia>MCS</referencia>
+      <nombre>MCS</nombre>
+    </actividad>
+    <actividad id="A023" tipo="docencia">
+      <referencia>LAT</referencia>
+      <nombre>LAT</nombre>
+    </actividad>
+    <actividad id="A024" tipo="docencia">
+      <referencia>ECN</referencia>
+      <nombre>ECN</nombre>
+    </actividad>
+    <actividad id="A025" tipo="docencia">
+      <referencia>GRI</referencia>
+      <nombre>GRI</nombre>
+    </actividad>
+    <actividad id="A026" tipo="docencia">
+      <referencia>MII</referencia>
+      <nombre>MII</nombre>
+    </actividad>
+    <actividad id="A027" tipo="docencia">
+      <referencia>CTM</referencia>
+      <nombre>CTM</nombre>
+    </actividad>
+    <actividad id="A028" tipo="docencia">
+      <referencia>HAR</referencia>
+      <nombre>HAR</nombre>
+    </actividad>
+    <actividad id="A029" tipo="docencia">
+      <referencia>DBT</referencia>
+      <nombre>DBT</nombre>
+    </actividad>
+    <actividad id="A030" tipo="docencia">
+      <referencia>QUI</referencia>
+      <nombre>QUI</nombre>
+    </actividad>
+    <actividad id="A031" tipo="docencia">
+      <referencia>FIS</referencia>
+      <nombre>FIS</nombre>
+    </actividad>
+    <actividad id="A032" tipo="docencia">
+      <referencia>GEO</referencia>
+      <nombre>GEO</nombre>
+    </actividad>
+    <actividad id="A033" tipo="docencia">
+      <referencia>INF</referencia>
+      <nombre>INF</nombre>
+    </actividad>
+    <actividad id="A034" tipo="guardia">
+      <referencia>GUARD</referencia>
+      <nombre>Servicio de guardia</nombre>
+    </actividad>
+    <actividad id="A035" tipo="docencia">
+      <referencia>CNA</referencia>
+      <nombre>CNA</nombre>
+    </actividad>
+    <actividad id="A036" tipo="docencia">
+      <referencia>MUS</referencia>
+      <nombre>MUS</nombre>
+    </actividad>
+    <actividad id="A037" tipo="docencia">
+      <referencia>ALT</referencia>
+      <nombre>ALT</nombre>
+    </actividad>
+    <actividad id="A038" tipo="docencia">
+      <referencia>RLE</referencia>
+      <nombre>RLE</nombre>
+    </actividad>
+    <actividad id="A039" tipo="docencia">
+      <referencia>SID</referencia>
+      <nombre>SID</nombre>
+    </actividad>
+    <actividad id="A040" tipo="docencia">
+      <referencia>RMA</referencia>
+      <nombre>RMA</nombre>
+    </actividad>
+    <actividad id="A041" tipo="docencia">
+      <referencia>RELE</referencia>
+      <nombre>RELE</nombre>
+    </actividad>
+    <actividad id="A042" tipo="docencia">
+      <referencia>MAA</referencia>
+      <nombre>MAA</nombre>
+    </actividad>
+    <actividad id="A043" tipo="docencia">
+      <referencia>CCL</referencia>
+      <nombre>CCL</nombre>
+    </actividad>
+    <actividad id="A044" tipo="docencia">
+      <referencia>INGd</referencia>
+      <nombre>INGd</nombre>
+    </actividad>
+    <actividad id="A045" tipo="docencia">
+      <referencia>ACT</referencia>
+      <nombre>ACT</nombre>
+    </actividad>
+    <actividad id="A046" tipo="docencia">
+      <referencia>ASL</referencia>
+      <nombre>ASL</nombre>
+    </actividad>
+    <actividad id="A047" tipo="docencia">
+      <referencia>MDC</referencia>
+      <nombre>MDC</nombre>
+    </actividad>
+    <actividad id="A048" tipo="docencia">
+      <referencia>DT</referencia>
+      <nombre>DT</nombre>
+    </actividad>
+    <actividad id="A049" tipo="docencia">
+      <referencia>BYG</referencia>
+      <nombre>BYG</nombre>
+    </actividad>
+    <actividad id="A050" tipo="docencia">
+      <referencia>IAP</referencia>
+      <nombre>IAP</nombre>
+    </actividad>
+    <actividad id="A051" tipo="docencia">
+      <referencia>HIS</referencia>
+      <nombre>HIS</nombre>
+    </actividad>
+    <actividad id="A052" tipo="docencia">
+      <referencia>REDI</referencia>
+      <nombre>REDI</nombre>
+    </actividad>
+    <actividad id="A053" tipo="docencia">
+      <referencia>RTU1</referencia>
+      <nombre>RTU1</nombre>
+    </actividad>
+    <actividad id="A054" tipo="docencia">
+      <referencia>RTU2</referencia>
+      <nombre>RTU2</nombre>
+    </actividad>
+    <actividad id="A055" tipo="docencia">
+      <referencia>RTU3</referencia>
+      <nombre>RTU3</nombre>
+    </actividad>
+    <actividad id="A056" tipo="docencia">
+      <referencia>RTU4</referencia>
+      <nombre>RTU4</nombre>
+    </actividad>
+    <actividad id="A057" tipo="docencia">
+      <referencia>INFOR</referencia>
+      <nombre>INFOR</nombre>
+    </actividad>
+    <actividad id="A058" tipo="docencia">
+      <referencia>IPROF</referencia>
+      <nombre>IPROF</nombre>
+    </actividad>
+    <actividad id="A059" tipo="docencia">
+      <referencia>ICO</referencia>
+      <nombre>ICO</nombre>
+    </actividad>
+    <actividad id="A060" tipo="docencia">
+      <referencia>EF2</referencia>
+      <nombre>EF2</nombre>
+    </actividad>
+    <actividad id="A061" tipo="docencia">
+      <referencia>GEL</referencia>
+      <nombre>GEL</nombre>
+    </actividad>
+    <actividad id="A062" tipo="reunion">
+      <referencia>RD</referencia>
+      <nombre>Reunión de departamento</nombre>
+    </actividad>
+  </actividades>
+
+  <sesiones>
+    <sesion id="S001" dia="4" perfil="PH01" tramo="T03" actividad="A001">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S002" dia="1" perfil="PH01" tramo="T02" actividad="A001">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S003" dia="5" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S004" dia="2" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S005" dia="5" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S006" dia="3" perfil="PH01" tramo="T06" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S007" dia="4" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S008" dia="1" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S009" dia="3" perfil="PH01" tramo="T04" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S010" dia="5" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S011" dia="3" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S012" dia="2" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S013" dia="1" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S014" dia="2" perfil="PH01" tramo="T06" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S015" dia="4" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S016" dia="4" perfil="PH01" tramo="T06" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S017" dia="2" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S018" dia="1" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S019" dia="3" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S020" dia="5" perfil="PH01" tramo="T02" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S021" dia="4" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S022" dia="1" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S023" dia="3" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S024" dia="4" perfil="PH01" tramo="T04" actividad="A010">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S025" dia="5" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S026" dia="3" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S027" dia="2" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S028" dia="5" perfil="PH01" tramo="T04" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S029" dia="2" perfil="PH01" tramo="T06" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S030" dia="3" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S031" dia="1" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S032" dia="4" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S033" dia="2" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S034" dia="2" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S035" dia="3" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S036" dia="1" perfil="PH01" tramo="T05" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S037" dia="4" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S038" dia="1" perfil="PH01" tramo="T02" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S039" dia="4" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S040" dia="1" perfil="PH01" tramo="T04" actividad="A012">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S041" dia="4" perfil="PH01" tramo="T02" actividad="A012">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S042" dia="3" perfil="PH01" tramo="T05" actividad="A012">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S043" dia="5" perfil="PH01" tramo="T03" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S044" dia="3" perfil="PH01" tramo="T04" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S045" dia="1" perfil="PH01" tramo="T01" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S046" dia="1" perfil="PH01" tramo="T03" actividad="A014">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S047" dia="1" perfil="PH01" tramo="T03" actividad="A006">
+      <profesores>
+        <profesor ref="P014"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S048" dia="1" perfil="PH01" tramo="T03" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S049" dia="5" perfil="PH01" tramo="T02" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S050" dia="4" perfil="PH01" tramo="T04" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S051" dia="2" perfil="PH01" tramo="T04" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S052" dia="3" perfil="PH01" tramo="T06" actividad="A016">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S053" dia="5" perfil="PH01" tramo="T05" actividad="A016">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S054" dia="5" perfil="PH01" tramo="T06" actividad="A010">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+      </grupos>
+    </sesion>
+    <sesion id="S055" dia="1" perfil="PH01" tramo="T06" actividad="A017">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S056" dia="3" perfil="PH01" tramo="T05" actividad="A017">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S057" dia="3" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S058" dia="5" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S059" dia="1" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S060" dia="4" perfil="PH01" tramo="T03" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S061" dia="5" perfil="PH01" tramo="T05" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S062" dia="2" perfil="PH01" tramo="T05" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S063" dia="5" perfil="PH01" tramo="T06" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S064" dia="2" perfil="PH01" tramo="T06" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S065" dia="3" perfil="PH01" tramo="T02" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S066" dia="4" perfil="PH01" tramo="T05" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S067" dia="1" perfil="PH01" tramo="T06" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S068" dia="1" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S069" dia="4" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S070" dia="3" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S071" dia="3" perfil="PH01" tramo="T05" actividad="A014">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S072" dia="2" perfil="PH01" tramo="T04" actividad="A021">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S073" dia="1" perfil="PH01" tramo="T04" actividad="A021">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S074" dia="5" perfil="PH01" tramo="T04" actividad="A021">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S075" dia="4" perfil="PH01" tramo="T01" actividad="A021">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S076" dia="3" perfil="PH01" tramo="T06" actividad="A022">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S077" dia="3" perfil="PH01" tramo="T06" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S078" dia="1" perfil="PH01" tramo="T02" actividad="A022">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S079" dia="1" perfil="PH01" tramo="T02" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S080" dia="2" perfil="PH01" tramo="T02" actividad="A022">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S081" dia="2" perfil="PH01" tramo="T02" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S082" dia="4" perfil="PH01" tramo="T06" actividad="A022">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S083" dia="4" perfil="PH01" tramo="T06" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S084" dia="1" perfil="PH01" tramo="T01" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S085" dia="1" perfil="PH01" tramo="T01" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S086" dia="3" perfil="PH01" tramo="T03" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S087" dia="3" perfil="PH01" tramo="T03" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S088" dia="5" perfil="PH01" tramo="T03" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S089" dia="5" perfil="PH01" tramo="T03" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S090" dia="2" perfil="PH01" tramo="T01" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S091" dia="2" perfil="PH01" tramo="T01" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S092" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S093" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S094" dia="3" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S095" dia="3" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S096" dia="4" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S097" dia="4" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S098" dia="5" perfil="PH01" tramo="T06" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S099" dia="3" perfil="PH01" tramo="T06" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S100" dia="2" perfil="PH01" tramo="T01" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S101" dia="5" perfil="PH01" tramo="T05" actividad="A019">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S102" dia="1" perfil="PH01" tramo="T01" actividad="A019">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S103" dia="3" perfil="PH01" tramo="T01" actividad="A019">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S104" dia="5" perfil="PH01" tramo="T01" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S105" dia="2" perfil="PH01" tramo="T06" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S106" dia="4" perfil="PH01" tramo="T01" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S107" dia="4" perfil="PH01" tramo="T01" actividad="A014">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S108" dia="4" perfil="PH01" tramo="T05" actividad="A026">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S109" dia="4" perfil="PH01" tramo="T05" actividad="A022">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S110" dia="4" perfil="PH01" tramo="T05" actividad="A027">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S111" dia="4" perfil="PH01" tramo="T05" actividad="A028">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S112" dia="3" perfil="PH01" tramo="T02" actividad="A026">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S113" dia="3" perfil="PH01" tramo="T02" actividad="A022">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S114" dia="3" perfil="PH01" tramo="T02" actividad="A027">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S115" dia="3" perfil="PH01" tramo="T02" actividad="A028">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S116" dia="1" perfil="PH01" tramo="T05" actividad="A026">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S117" dia="1" perfil="PH01" tramo="T05" actividad="A022">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S118" dia="1" perfil="PH01" tramo="T05" actividad="A027">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S119" dia="1" perfil="PH01" tramo="T05" actividad="A028">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S120" dia="2" perfil="PH01" tramo="T02" actividad="A026">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S121" dia="2" perfil="PH01" tramo="T02" actividad="A022">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S122" dia="2" perfil="PH01" tramo="T02" actividad="A027">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S123" dia="2" perfil="PH01" tramo="T02" actividad="A028">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S124" dia="4" perfil="PH01" tramo="T04" actividad="A029">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S125" dia="4" perfil="PH01" tramo="T04" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S126" dia="4" perfil="PH01" tramo="T04" actividad="A030">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S127" dia="4" perfil="PH01" tramo="T04" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S128" dia="2" perfil="PH01" tramo="T03" actividad="A029">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S129" dia="2" perfil="PH01" tramo="T03" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S130" dia="2" perfil="PH01" tramo="T03" actividad="A030">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S131" dia="2" perfil="PH01" tramo="T03" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S132" dia="5" perfil="PH01" tramo="T04" actividad="A029">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S133" dia="5" perfil="PH01" tramo="T04" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S134" dia="5" perfil="PH01" tramo="T04" actividad="A030">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S135" dia="5" perfil="PH01" tramo="T04" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S136" dia="3" perfil="PH01" tramo="T04" actividad="A029">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S137" dia="3" perfil="PH01" tramo="T04" actividad="A025">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S138" dia="3" perfil="PH01" tramo="T04" actividad="A030">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S139" dia="3" perfil="PH01" tramo="T04" actividad="A024">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S140" dia="4" perfil="PH01" tramo="T03" actividad="A031">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S141" dia="4" perfil="PH01" tramo="T03" actividad="A012">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S142" dia="4" perfil="PH01" tramo="T03" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S143" dia="4" perfil="PH01" tramo="T03" actividad="A032">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S144" dia="5" perfil="PH01" tramo="T02" actividad="A031">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S145" dia="5" perfil="PH01" tramo="T02" actividad="A012">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S146" dia="5" perfil="PH01" tramo="T02" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S147" dia="5" perfil="PH01" tramo="T02" actividad="A032">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S148" dia="3" perfil="PH01" tramo="T05" actividad="A031">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S149" dia="3" perfil="PH01" tramo="T05" actividad="A012">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S150" dia="3" perfil="PH01" tramo="T05" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S151" dia="3" perfil="PH01" tramo="T05" actividad="A032">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S152" dia="1" perfil="PH01" tramo="T04" actividad="A031">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S153" dia="1" perfil="PH01" tramo="T04" actividad="A012">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S154" dia="1" perfil="PH01" tramo="T04" actividad="A023">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S155" dia="1" perfil="PH01" tramo="T04" actividad="A032">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S156" dia="4" perfil="PH01" tramo="T06" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S157" dia="4" perfil="PH01" tramo="T06" actividad="A033">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G004"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S158" dia="2" perfil="PH01" tramo="T05" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S159" dia="2" perfil="PH01" tramo="T05" actividad="A033">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G002"/>
+        <grupo ref="G004"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S160" dia="2" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+    </sesion>
+    <sesion id="S161" dia="2" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+    </sesion>
+    <sesion id="S162" dia="1" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S163" dia="3" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S164" dia="4" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+    </sesion>
+    <sesion id="S165" dia="4" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+    </sesion>
+    <sesion id="S166" dia="1" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+    </sesion>
+    <sesion id="S167" dia="4" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S168" dia="2" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S169" dia="1" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+    </sesion>
+    <sesion id="S170" dia="1" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+    </sesion>
+    <sesion id="S171" dia="5" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+    </sesion>
+    <sesion id="S172" dia="5" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+    </sesion>
+    <sesion id="S173" dia="4" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S174" dia="3" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S175" dia="3" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+    </sesion>
+    <sesion id="S176" dia="4" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+    </sesion>
+    <sesion id="S177" dia="4" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S178" dia="1" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S179" dia="2" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S180" dia="5" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+    </sesion>
+    <sesion id="S181" dia="5" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+    </sesion>
+    <sesion id="S182" dia="5" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+    </sesion>
+    <sesion id="S183" dia="4" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+    </sesion>
+    <sesion id="S184" dia="4" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+    </sesion>
+    <sesion id="S185" dia="5" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+    </sesion>
+    <sesion id="S186" dia="1" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+    </sesion>
+    <sesion id="S187" dia="2" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+    </sesion>
+    <sesion id="S188" dia="3" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+    </sesion>
+    <sesion id="S189" dia="4" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+    </sesion>
+    <sesion id="S190" dia="3" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+    </sesion>
+    <sesion id="S191" dia="3" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+    </sesion>
+    <sesion id="S192" dia="3" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+    </sesion>
+    <sesion id="S193" dia="2" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+    </sesion>
+    <sesion id="S194" dia="5" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+    </sesion>
+    <sesion id="S195" dia="1" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+    </sesion>
+    <sesion id="S196" dia="1" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+    </sesion>
+    <sesion id="S197" dia="1" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+    </sesion>
+    <sesion id="S198" dia="2" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+    </sesion>
+    <sesion id="S199" dia="1" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S200" dia="1" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S201" dia="4" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+    </sesion>
+    <sesion id="S202" dia="1" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P021"/>
+      </profesores>
+    </sesion>
+    <sesion id="S203" dia="3" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S204" dia="3" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S205" dia="3" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+    </sesion>
+    <sesion id="S206" dia="2" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+    </sesion>
+    <sesion id="S207" dia="2" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+    </sesion>
+    <sesion id="S208" dia="2" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+    </sesion>
+    <sesion id="S209" dia="2" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+    </sesion>
+    <sesion id="S210" dia="2" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+    </sesion>
+    <sesion id="S211" dia="1" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+    </sesion>
+    <sesion id="S212" dia="5" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+    </sesion>
+    <sesion id="S213" dia="1" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+    </sesion>
+    <sesion id="S214" dia="4" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S215" dia="5" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S216" dia="2" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S217" dia="5" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+    </sesion>
+    <sesion id="S218" dia="5" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+    </sesion>
+    <sesion id="S219" dia="5" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+    </sesion>
+    <sesion id="S220" dia="4" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+    </sesion>
+    <sesion id="S221" dia="4" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+    </sesion>
+    <sesion id="S222" dia="3" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+    </sesion>
+    <sesion id="S223" dia="4" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+    </sesion>
+    <sesion id="S224" dia="1" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+    </sesion>
+    <sesion id="S225" dia="3" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+    </sesion>
+    <sesion id="S226" dia="4" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S227" dia="3" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+    </sesion>
+    <sesion id="S228" dia="5" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+    </sesion>
+    <sesion id="S229" dia="4" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+    </sesion>
+    <sesion id="S230" dia="1" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+    </sesion>
+    <sesion id="S231" dia="5" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S232" dia="3" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S233" dia="3" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+    </sesion>
+    <sesion id="S234" dia="5" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+    </sesion>
+    <sesion id="S235" dia="2" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+    </sesion>
+    <sesion id="S236" dia="2" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+    </sesion>
+    <sesion id="S237" dia="2" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+    </sesion>
+    <sesion id="S238" dia="1" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+    </sesion>
+    <sesion id="S239" dia="2" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+    </sesion>
+    <sesion id="S240" dia="3" perfil="PH01" tramo="T06" actividad="A034">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+    </sesion>
+    <sesion id="S241" dia="5" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+    </sesion>
+    <sesion id="S242" dia="1" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+    </sesion>
+    <sesion id="S243" dia="2" perfil="PH01" tramo="T05" actividad="A034">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+    </sesion>
+    <sesion id="S244" dia="5" perfil="PH01" tramo="T04" actividad="A034">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+    </sesion>
+    <sesion id="S245" dia="4" perfil="PH01" tramo="T01" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S246" dia="2" perfil="PH01" tramo="T03" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S247" dia="1" perfil="PH01" tramo="T03" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S248" dia="1" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S249" dia="4" perfil="PH01" tramo="T02" actividad="A036">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S250" dia="3" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S251" dia="1" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S252" dia="4" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S253" dia="4" perfil="PH01" tramo="T04" actividad="A004">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S254" dia="1" perfil="PH01" tramo="T06" actividad="A004">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S255" dia="2" perfil="PH01" tramo="T06" actividad="A004">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S256" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S257" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S258" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P040"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S259" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S260" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S261" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P040"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S262" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S263" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S264" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P040"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S265" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S266" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S267" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P040"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S268" dia="1" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P014"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S269" dia="1" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S270" dia="1" perfil="PH01" tramo="T04" actividad="A037">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S271" dia="5" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P014"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S272" dia="5" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S273" dia="5" perfil="PH01" tramo="T04" actividad="A037">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S274" dia="5" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S275" dia="3" perfil="PH01" tramo="T06" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S276" dia="2" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S277" dia="2" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S278" dia="2" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S279" dia="2" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S280" dia="3" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S281" dia="3" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S282" dia="3" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S283" dia="5" perfil="PH01" tramo="T03" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S284" dia="5" perfil="PH01" tramo="T03" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S285" dia="5" perfil="PH01" tramo="T03" actividad="A009">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S286" dia="5" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S287" dia="2" perfil="PH01" tramo="T01" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S288" dia="3" perfil="PH01" tramo="T02" actividad="A038">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S289" dia="3" perfil="PH01" tramo="T02" actividad="A038">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S290" dia="3" perfil="PH01" tramo="T02" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S291" dia="5" perfil="PH01" tramo="T02" actividad="A038">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S292" dia="5" perfil="PH01" tramo="T02" actividad="A038">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S293" dia="5" perfil="PH01" tramo="T02" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S294" dia="3" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G008"/>
+      </grupos>
+    </sesion>
+    <sesion id="S295" dia="1" perfil="PH01" tramo="T05" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S296" dia="5" perfil="PH01" tramo="T01" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S297" dia="2" perfil="PH01" tramo="T06" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S298" dia="1" perfil="PH01" tramo="T01" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S299" dia="3" perfil="PH01" tramo="T03" actividad="A036">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S300" dia="4" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S301" dia="1" perfil="PH01" tramo="T06" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S302" dia="2" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S303" dia="5" perfil="PH01" tramo="T05" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S304" dia="2" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S305" dia="4" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S306" dia="4" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S307" dia="3" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S308" dia="1" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S309" dia="4" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S310" dia="2" perfil="PH01" tramo="T02" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S311" dia="3" perfil="PH01" tramo="T06" actividad="A010">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G009"/>
+      </grupos>
+    </sesion>
+    <sesion id="S312" dia="3" perfil="PH01" tramo="T06" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S313" dia="5" perfil="PH01" tramo="T05" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S314" dia="2" perfil="PH01" tramo="T06" actividad="A035">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S315" dia="3" perfil="PH01" tramo="T01" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S316" dia="3" perfil="PH01" tramo="T02" actividad="A036">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S317" dia="3" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S318" dia="4" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S319" dia="1" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S320" dia="2" perfil="PH01" tramo="T05" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S321" dia="5" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S322" dia="1" perfil="PH01" tramo="T06" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S323" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S324" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S325" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S326" dia="1" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S327" dia="1" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S328" dia="1" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S329" dia="4" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S330" dia="4" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S331" dia="4" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S332" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S333" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S334" dia="2" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S335" dia="1" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S336" dia="4" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S337" dia="2" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S338" dia="4" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S339" dia="4" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S340" dia="4" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S341" dia="5" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S342" dia="5" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S343" dia="5" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S344" dia="2" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S345" dia="2" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S346" dia="2" perfil="PH01" tramo="T02" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S347" dia="5" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S348" dia="1" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S349" dia="4" perfil="PH01" tramo="T03" actividad="A040">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S350" dia="4" perfil="PH01" tramo="T03" actividad="A038">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S351" dia="4" perfil="PH01" tramo="T03" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S352" dia="2" perfil="PH01" tramo="T03" actividad="A040">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S353" dia="2" perfil="PH01" tramo="T03" actividad="A038">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S354" dia="2" perfil="PH01" tramo="T03" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S355" dia="3" perfil="PH01" tramo="T04" actividad="A010">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G010"/>
+      </grupos>
+    </sesion>
+    <sesion id="S356" dia="5" perfil="PH01" tramo="T02" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S357" dia="3" perfil="PH01" tramo="T02" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S358" dia="2" perfil="PH01" tramo="T05" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S359" dia="4" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S360" dia="2" perfil="PH01" tramo="T02" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S361" dia="4" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S362" dia="5" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S363" dia="1" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S364" dia="3" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S365" dia="4" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S366" dia="1" perfil="PH01" tramo="T06" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S367" dia="4" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S368" dia="2" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S369" dia="5" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S370" dia="3" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S371" dia="5" perfil="PH01" tramo="T05" actividad="A037">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S372" dia="5" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P014"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S373" dia="5" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S374" dia="1" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S375" dia="2" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S376" dia="4" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S377" dia="5" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S378" dia="2" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S379" dia="1" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S380" dia="3" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S381" dia="1" perfil="PH01" tramo="T02" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S382" dia="3" perfil="PH01" tramo="T06" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S383" dia="1" perfil="PH01" tramo="T01" actividad="A038">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S384" dia="1" perfil="PH01" tramo="T01" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S385" dia="3" perfil="PH01" tramo="T03" actividad="A038">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S386" dia="3" perfil="PH01" tramo="T03" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S387" dia="2" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G012"/>
+      </grupos>
+    </sesion>
+    <sesion id="S388" dia="4" perfil="PH01" tramo="T03" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S389" dia="1" perfil="PH01" tramo="T05" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S390" dia="5" perfil="PH01" tramo="T01" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S391" dia="1" perfil="PH01" tramo="T02" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S392" dia="3" perfil="PH01" tramo="T06" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S393" dia="5" perfil="PH01" tramo="T03" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S394" dia="3" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S395" dia="2" perfil="PH01" tramo="T04" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S396" dia="2" perfil="PH01" tramo="T05" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S397" dia="5" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S398" dia="1" perfil="PH01" tramo="T04" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S399" dia="4" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S400" dia="1" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S401" dia="3" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S402" dia="2" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S403" dia="1" perfil="PH01" tramo="T06" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S404" dia="4" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S405" dia="3" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S406" dia="4" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S407" dia="2" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S408" dia="3" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S409" dia="5" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S410" dia="2" perfil="PH01" tramo="T06" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S411" dia="4" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S412" dia="2" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G013"/>
+      </grupos>
+    </sesion>
+    <sesion id="S413" dia="4" perfil="PH01" tramo="T02" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S414" dia="2" perfil="PH01" tramo="T06" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S415" dia="1" perfil="PH01" tramo="T06" actividad="A035">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S416" dia="4" perfil="PH01" tramo="T03" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S417" dia="3" perfil="PH01" tramo="T03" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S418" dia="5" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S419" dia="2" perfil="PH01" tramo="T05" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S420" dia="3" perfil="PH01" tramo="T05" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S421" dia="2" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S422" dia="1" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S423" dia="5" perfil="PH01" tramo="T04" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S424" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S425" dia="1" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S426" dia="3" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S427" dia="2" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S428" dia="2" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S429" dia="3" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S430" dia="5" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S431" dia="3" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S432" dia="4" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S433" dia="1" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S434" dia="2" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S435" dia="3" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S436" dia="1" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S437" dia="5" perfil="PH01" tramo="T01" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S438" dia="5" perfil="PH01" tramo="T01" actividad="A040">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S439" dia="5" perfil="PH01" tramo="T01" actividad="A038">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S440" dia="1" perfil="PH01" tramo="T02" actividad="A039">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S441" dia="1" perfil="PH01" tramo="T02" actividad="A040">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S442" dia="1" perfil="PH01" tramo="T02" actividad="A038">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S443" dia="4" perfil="PH01" tramo="T01" actividad="A010">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G014"/>
+      </grupos>
+    </sesion>
+    <sesion id="S444" dia="5" perfil="PH01" tramo="T03" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S445" dia="2" perfil="PH01" tramo="T03" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S446" dia="4" perfil="PH01" tramo="T01" actividad="A001">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S447" dia="2" perfil="PH01" tramo="T01" actividad="A001">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S448" dia="4" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S449" dia="1" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S450" dia="5" perfil="PH01" tramo="T04" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S451" dia="1" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S452" dia="3" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S453" dia="1" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S454" dia="4" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S455" dia="2" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S456" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S457" dia="5" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S458" dia="3" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S459" dia="4" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S460" dia="1" perfil="PH01" tramo="T06" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S461" dia="3" perfil="PH01" tramo="T06" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S462" dia="4" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S463" dia="1" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S464" dia="5" perfil="PH01" tramo="T01" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S465" dia="2" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S466" dia="3" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S467" dia="5" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S468" dia="2" perfil="PH01" tramo="T06" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S469" dia="2" perfil="PH01" tramo="T02" actividad="A010">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S470" dia="5" perfil="PH01" tramo="T06" actividad="A017">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S471" dia="2" perfil="PH01" tramo="T04" actividad="A017">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S472" dia="3" perfil="PH01" tramo="T01" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S473" dia="1" perfil="PH01" tramo="T03" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S474" dia="3" perfil="PH01" tramo="T03" actividad="A001">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S475" dia="1" perfil="PH01" tramo="T01" actividad="A001">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S476" dia="2" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S477" dia="4" perfil="PH01" tramo="T04" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S478" dia="2" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S479" dia="4" perfil="PH01" tramo="T06" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S480" dia="1" perfil="PH01" tramo="T05" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S481" dia="4" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S482" dia="3" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S483" dia="1" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S484" dia="2" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S485" dia="3" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S486" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S487" dia="5" perfil="PH01" tramo="T03" actividad="A014">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S488" dia="5" perfil="PH01" tramo="T03" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S489" dia="3" perfil="PH01" tramo="T04" actividad="A014">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S490" dia="3" perfil="PH01" tramo="T04" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S491" dia="5" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S492" dia="4" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S493" dia="2" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S494" dia="4" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S495" dia="2" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S496" dia="2" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S497" dia="3" perfil="PH01" tramo="T01" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S498" dia="5" perfil="PH01" tramo="T06" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S499" dia="1" perfil="PH01" tramo="T04" actividad="A010">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S500" dia="1" perfil="PH01" tramo="T03" actividad="A017">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S501" dia="5" perfil="PH01" tramo="T01" actividad="A017">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S502" dia="5" perfil="PH01" tramo="T02" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S503" dia="1" perfil="PH01" tramo="T06" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S504" dia="5" perfil="PH01" tramo="T04" actividad="A041">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S505" dia="5" perfil="PH01" tramo="T04" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S506" dia="2" perfil="PH01" tramo="T04" actividad="A041">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S507" dia="2" perfil="PH01" tramo="T04" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G001"/>
+      </grupos>
+    </sesion>
+    <sesion id="S508" dia="3" perfil="PH01" tramo="T04" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S509" dia="5" perfil="PH01" tramo="T02" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G015"/>
+      </grupos>
+    </sesion>
+    <sesion id="S510" dia="5" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S511" dia="4" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S512" dia="2" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S513" dia="2" perfil="PH01" tramo="T04" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S514" dia="4" perfil="PH01" tramo="T02" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S515" dia="3" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S516" dia="4" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S517" dia="2" perfil="PH01" tramo="T03" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S518" dia="5" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S519" dia="1" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S520" dia="3" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S521" dia="2" perfil="PH01" tramo="T05" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S522" dia="4" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S523" dia="1" perfil="PH01" tramo="T01" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S524" dia="3" perfil="PH01" tramo="T06" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S525" dia="1" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S526" dia="5" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S527" dia="2" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S528" dia="1" perfil="PH01" tramo="T04" actividad="A042">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S529" dia="3" perfil="PH01" tramo="T05" actividad="A042">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S530" dia="4" perfil="PH01" tramo="T06" actividad="A042">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S531" dia="4" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+      </grupos>
+    </sesion>
+    <sesion id="S532" dia="4" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S533" dia="1" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S534" dia="3" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S535" dia="4" perfil="PH01" tramo="T05" actividad="A004">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S536" dia="1" perfil="PH01" tramo="T06" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S537" dia="5" perfil="PH01" tramo="T02" actividad="A011">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S538" dia="4" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S539" dia="5" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S540" dia="1" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S541" dia="2" perfil="PH01" tramo="T02" actividad="A005">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S542" dia="4" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S543" dia="1" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S544" dia="3" perfil="PH01" tramo="T05" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S545" dia="2" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S546" dia="3" perfil="PH01" tramo="T02" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S547" dia="5" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S548" dia="3" perfil="PH01" tramo="T04" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S549" dia="2" perfil="PH01" tramo="T01" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S550" dia="5" perfil="PH01" tramo="T01" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S551" dia="4" perfil="PH01" tramo="T03" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S552" dia="4" perfil="PH01" tramo="T04" actividad="A043">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S553" dia="1" perfil="PH01" tramo="T05" actividad="A043">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S554" dia="2" perfil="PH01" tramo="T03" actividad="A010">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S555" dia="2" perfil="PH01" tramo="T01" actividad="A044">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S556" dia="4" perfil="PH01" tramo="T05" actividad="A044">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S557" dia="3" perfil="PH01" tramo="T05" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S558" dia="3" perfil="PH01" tramo="T04" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S559" dia="4" perfil="PH01" tramo="T04" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S560" dia="1" perfil="PH01" tramo="T04" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S561" dia="2" perfil="PH01" tramo="T04" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S562" dia="5" perfil="PH01" tramo="T06" actividad="A045">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S563" dia="4" perfil="PH01" tramo="T02" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S564" dia="4" perfil="PH01" tramo="T01" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S565" dia="5" perfil="PH01" tramo="T01" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S566" dia="2" perfil="PH01" tramo="T03" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S567" dia="3" perfil="PH01" tramo="T01" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S568" dia="1" perfil="PH01" tramo="T02" actividad="A046">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S569" dia="4" perfil="PH01" tramo="T02" actividad="A047">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S570" dia="2" perfil="PH01" tramo="T03" actividad="A047">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S571" dia="3" perfil="PH01" tramo="T04" actividad="A047">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S572" dia="5" perfil="PH01" tramo="T01" actividad="A047">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G005"/>
+      </grupos>
+    </sesion>
+    <sesion id="S573" dia="5" perfil="PH01" tramo="T04" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S574" dia="2" perfil="PH01" tramo="T01" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S575" dia="3" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S576" dia="5" perfil="PH01" tramo="T03" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S577" dia="2" perfil="PH01" tramo="T02" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S578" dia="4" perfil="PH01" tramo="T01" actividad="A018">
+      <profesores>
+        <profesor ref="P010"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S579" dia="5" perfil="PH01" tramo="T05" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S580" dia="3" perfil="PH01" tramo="T04" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S581" dia="2" perfil="PH01" tramo="T05" actividad="A019">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S582" dia="4" perfil="PH01" tramo="T03" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S583" dia="1" perfil="PH01" tramo="T05" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S584" dia="5" perfil="PH01" tramo="T06" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S585" dia="1" perfil="PH01" tramo="T03" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S586" dia="5" perfil="PH01" tramo="T02" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S587" dia="3" perfil="PH01" tramo="T06" actividad="A009">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S588" dia="4" perfil="PH01" tramo="T06" actividad="A009">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S589" dia="1" perfil="PH01" tramo="T06" actividad="A009">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S590" dia="2" perfil="PH01" tramo="T03" actividad="A009">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S591" dia="3" perfil="PH01" tramo="T03" actividad="A048">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S592" dia="3" perfil="PH01" tramo="T03" actividad="A049">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S593" dia="2" perfil="PH01" tramo="T04" actividad="A048">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S594" dia="2" perfil="PH01" tramo="T04" actividad="A049">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S595" dia="1" perfil="PH01" tramo="T04" actividad="A048">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S596" dia="1" perfil="PH01" tramo="T04" actividad="A049">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S597" dia="4" perfil="PH01" tramo="T05" actividad="A048">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S598" dia="4" perfil="PH01" tramo="T05" actividad="A049">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S599" dia="5" perfil="PH01" tramo="T01" actividad="A050">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S600" dia="1" perfil="PH01" tramo="T01" actividad="A050">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S601" dia="3" perfil="PH01" tramo="T01" actividad="A050">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S602" dia="4" perfil="PH01" tramo="T04" actividad="A050">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S603" dia="3" perfil="PH01" tramo="T02" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S604" dia="4" perfil="PH01" tramo="T02" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S605" dia="1" perfil="PH01" tramo="T02" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S606" dia="2" perfil="PH01" tramo="T06" actividad="A013">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G018"/>
+      </grupos>
+    </sesion>
+    <sesion id="S607" dia="2" perfil="PH01" tramo="T04" actividad="A051">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S608" dia="2" perfil="PH01" tramo="T04" actividad="A051">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S609" dia="1" perfil="PH01" tramo="T03" actividad="A051">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S610" dia="1" perfil="PH01" tramo="T03" actividad="A051">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S611" dia="5" perfil="PH01" tramo="T03" actividad="A051">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S612" dia="5" perfil="PH01" tramo="T03" actividad="A051">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S613" dia="4" perfil="PH01" tramo="T03" actividad="A052">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+    </sesion>
+    <sesion id="S614" dia="4" perfil="PH01" tramo="T03" actividad="A052">
+      <profesores>
+        <profesor ref="P016"/>
+      </profesores>
+    </sesion>
+    <sesion id="S615" dia="4" perfil="PH01" tramo="T03" actividad="A052">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+    </sesion>
+    <sesion id="S616" dia="4" perfil="PH01" tramo="T03" actividad="A052">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+    </sesion>
+    <sesion id="S617" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+    </sesion>
+    <sesion id="S618" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+    </sesion>
+    <sesion id="S619" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+    </sesion>
+    <sesion id="S620" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+    </sesion>
+    <sesion id="S621" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+    </sesion>
+    <sesion id="S622" dia="2" perfil="PH01" tramo="T03" actividad="A053">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+    </sesion>
+    <sesion id="S623" dia="4" perfil="PH01" tramo="T02" actividad="A054">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+    </sesion>
+    <sesion id="S624" dia="4" perfil="PH01" tramo="T02" actividad="A054">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+    </sesion>
+    <sesion id="S625" dia="4" perfil="PH01" tramo="T02" actividad="A054">
+      <profesores>
+        <profesor ref="P033"/>
+      </profesores>
+    </sesion>
+    <sesion id="S626" dia="4" perfil="PH01" tramo="T02" actividad="A054">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+    </sesion>
+    <sesion id="S627" dia="4" perfil="PH01" tramo="T02" actividad="A054">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+    </sesion>
+    <sesion id="S628" dia="3" perfil="PH01" tramo="T04" actividad="A055">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S629" dia="3" perfil="PH01" tramo="T04" actividad="A055">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+    </sesion>
+    <sesion id="S630" dia="3" perfil="PH01" tramo="T04" actividad="A055">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S631" dia="3" perfil="PH01" tramo="T04" actividad="A055">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+    </sesion>
+    <sesion id="S632" dia="3" perfil="PH01" tramo="T04" actividad="A055">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+    </sesion>
+    <sesion id="S633" dia="2" perfil="PH01" tramo="T04" actividad="A056">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S634" dia="2" perfil="PH01" tramo="T04" actividad="A056">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+    </sesion>
+    <sesion id="S635" dia="2" perfil="PH01" tramo="T04" actividad="A056">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+    </sesion>
+    <sesion id="S636" dia="2" perfil="PH01" tramo="T04" actividad="A056">
+      <profesores>
+        <profesor ref="P019"/>
+      </profesores>
+    </sesion>
+    <sesion id="S637" dia="1" perfil="PH01" tramo="T01" actividad="A010">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S638" dia="4" perfil="PH01" tramo="T01" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S639" dia="2" perfil="PH01" tramo="T05" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S640" dia="1" perfil="PH01" tramo="T02" actividad="A035">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S641" dia="3" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P002"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S642" dia="5" perfil="PH01" tramo="T04" actividad="A036">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S643" dia="5" perfil="PH01" tramo="T05" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S644" dia="1" perfil="PH01" tramo="T04" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S645" dia="3" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S646" dia="2" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S647" dia="3" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S648" dia="5" perfil="PH01" tramo="T03" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S649" dia="1" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S650" dia="4" perfil="PH01" tramo="T02" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S651" dia="1" perfil="PH01" tramo="T06" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S652" dia="3" perfil="PH01" tramo="T04" actividad="A008">
+      <profesores>
+        <profesor ref="P008"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S653" dia="5" perfil="PH01" tramo="T01" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S654" dia="2" perfil="PH01" tramo="T06" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S655" dia="3" perfil="PH01" tramo="T02" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G011"/>
+      </grupos>
+    </sesion>
+    <sesion id="S656" dia="4" perfil="PH01" tramo="T02" actividad="A001">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S657" dia="1" perfil="PH01" tramo="T03" actividad="A001">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S658" dia="3" perfil="PH01" tramo="T04" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S659" dia="5" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S660" dia="4" perfil="PH01" tramo="T04" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S661" dia="2" perfil="PH01" tramo="T01" actividad="A003">
+      <profesores>
+        <profesor ref="P003"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S662" dia="5" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S663" dia="3" perfil="PH01" tramo="T01" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S664" dia="2" perfil="PH01" tramo="T02" actividad="A004">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S665" dia="5" perfil="PH01" tramo="T05" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S666" dia="1" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S667" dia="4" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S668" dia="2" perfil="PH01" tramo="T06" actividad="A005">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S669" dia="2" perfil="PH01" tramo="T05" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S670" dia="5" perfil="PH01" tramo="T01" actividad="A006">
+      <profesores>
+        <profesor ref="P006"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S671" dia="5" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S672" dia="4" perfil="PH01" tramo="T03" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S673" dia="2" perfil="PH01" tramo="T04" actividad="A007">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S674" dia="5" perfil="PH01" tramo="T04" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S675" dia="4" perfil="PH01" tramo="T05" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S676" dia="2" perfil="PH01" tramo="T03" actividad="A009">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S677" dia="3" perfil="PH01" tramo="T06" actividad="A010">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S678" dia="1" perfil="PH01" tramo="T05" actividad="A017">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S679" dia="3" perfil="PH01" tramo="T03" actividad="A017">
+      <profesores>
+        <profesor ref="P012"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S680" dia="1" perfil="PH01" tramo="T04" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S681" dia="4" perfil="PH01" tramo="T01" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S682" dia="3" perfil="PH01" tramo="T02" actividad="A057">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S683" dia="1" perfil="PH01" tramo="T02" actividad="A057">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S684" dia="5" perfil="PH01" tramo="T05" actividad="A041">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S685" dia="5" perfil="PH01" tramo="T05" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S686" dia="3" perfil="PH01" tramo="T05" actividad="A041">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S687" dia="3" perfil="PH01" tramo="T05" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G016"/>
+      </grupos>
+    </sesion>
+    <sesion id="S688" dia="3" perfil="PH01" tramo="T05" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S689" dia="1" perfil="PH01" tramo="T01" actividad="A008">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G019"/>
+      </grupos>
+    </sesion>
+    <sesion id="S690" dia="5" perfil="PH01" tramo="T04" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S691" dia="5" perfil="PH01" tramo="T04" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S692" dia="1" perfil="PH01" tramo="T05" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S693" dia="1" perfil="PH01" tramo="T05" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S694" dia="3" perfil="PH01" tramo="T02" actividad="A036">
+      <profesores>
+        <profesor ref="P030"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S695" dia="3" perfil="PH01" tramo="T02" actividad="A003">
+      <profesores>
+        <profesor ref="P029"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S696" dia="2" perfil="PH01" tramo="T02" actividad="A058">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S697" dia="2" perfil="PH01" tramo="T02" actividad="A043">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S698" dia="5" perfil="PH01" tramo="T02" actividad="A058">
+      <profesores>
+        <profesor ref="P022"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S699" dia="5" perfil="PH01" tramo="T02" actividad="A043">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S700" dia="5" perfil="PH01" tramo="T03" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S701" dia="5" perfil="PH01" tramo="T03" actividad="A059">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S702" dia="5" perfil="PH01" tramo="T03" actividad="A033">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S703" dia="3" perfil="PH01" tramo="T03" actividad="A020">
+      <profesores>
+        <profesor ref="P017"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S704" dia="3" perfil="PH01" tramo="T03" actividad="A059">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+        <grupo ref="G004"/>
+      </grupos>
+    </sesion>
+    <sesion id="S705" dia="3" perfil="PH01" tramo="T03" actividad="A033">
+      <profesores>
+        <profesor ref="P028"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G003"/>
+        <grupo ref="G017"/>
+      </grupos>
+      <espacios>
+        <espacio ref="E001"/>
+      </espacios>
+    </sesion>
+    <sesion id="S706" dia="2" perfil="PH01" tramo="T06" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S707" dia="5" perfil="PH01" tramo="T05" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S708" dia="3" perfil="PH01" tramo="T06" actividad="A015">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S709" dia="2" perfil="PH01" tramo="T05" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S710" dia="1" perfil="PH01" tramo="T04" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S711" dia="4" perfil="PH01" tramo="T06" actividad="A002">
+      <profesores>
+        <profesor ref="P036"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G017"/>
+      </grupos>
+    </sesion>
+    <sesion id="S712" dia="4" perfil="PH01" tramo="T06" actividad="A060">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S713" dia="4" perfil="PH01" tramo="T06" actividad="A061">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S714" dia="1" perfil="PH01" tramo="T06" actividad="A060">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S715" dia="1" perfil="PH01" tramo="T06" actividad="A061">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S716" dia="2" perfil="PH01" tramo="T05" actividad="A060">
+      <profesores>
+        <profesor ref="P018"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S717" dia="2" perfil="PH01" tramo="T05" actividad="A061">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+      <grupos>
+        <grupo ref="G006"/>
+        <grupo ref="G007"/>
+      </grupos>
+    </sesion>
+    <sesion id="S718" dia="4" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P038"/>
+      </profesores>
+    </sesion>
+    <sesion id="S719" dia="4" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P037"/>
+      </profesores>
+    </sesion>
+    <sesion id="S720" dia="4" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P024"/>
+      </profesores>
+    </sesion>
+    <sesion id="S721" dia="4" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S722" dia="4" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P011"/>
+      </profesores>
+    </sesion>
+    <sesion id="S723" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P009"/>
+      </profesores>
+    </sesion>
+    <sesion id="S724" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P013"/>
+      </profesores>
+    </sesion>
+    <sesion id="S725" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P035"/>
+      </profesores>
+    </sesion>
+    <sesion id="S726" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P015"/>
+      </profesores>
+    </sesion>
+    <sesion id="S727" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P039"/>
+      </profesores>
+    </sesion>
+    <sesion id="S728" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P034"/>
+      </profesores>
+    </sesion>
+    <sesion id="S729" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P001"/>
+      </profesores>
+    </sesion>
+    <sesion id="S730" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P027"/>
+      </profesores>
+    </sesion>
+    <sesion id="S731" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P023"/>
+      </profesores>
+    </sesion>
+    <sesion id="S732" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P026"/>
+      </profesores>
+    </sesion>
+    <sesion id="S733" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P004"/>
+      </profesores>
+    </sesion>
+    <sesion id="S734" dia="4" perfil="PH01" tramo="T04" actividad="A062">
+      <profesores>
+        <profesor ref="P020"/>
+      </profesores>
+    </sesion>
+    <sesion id="S735" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P025"/>
+      </profesores>
+    </sesion>
+    <sesion id="S736" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P031"/>
+      </profesores>
+    </sesion>
+    <sesion id="S737" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P007"/>
+      </profesores>
+    </sesion>
+    <sesion id="S738" dia="3" perfil="PH01" tramo="T03" actividad="A062">
+      <profesores>
+        <profesor ref="P032"/>
+      </profesores>
+    </sesion>
+    <sesion id="S739" dia="3" perfil="PH01" tramo="T03" actividad="A034">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S740" dia="3" perfil="PH01" tramo="T02" actividad="A034">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+    <sesion id="S741" dia="4" perfil="PH01" tramo="T01" actividad="A034">
+      <profesores>
+        <profesor ref="P005"/>
+      </profesores>
+    </sesion>
+  </sesiones>
+</fushe>

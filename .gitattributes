@@ -3,6 +3,7 @@
 *.fushe text eol=lf
 *.fet text eol=lf
 *.xrho binary
+examples/horw/*.csv binary
 *.ts text eol=lf
 *.json text eol=lf
 *.yml text eol=lf

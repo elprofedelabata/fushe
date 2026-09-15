@@ -89,6 +89,7 @@ El repositorio incluye una implementación inicial en TypeScript con:
 - extracción segura de contenedores `.xrho`;
 - conversión del horario final de Peñalara;
 - conversión del horario final generado por FET;
+- conversión del CSV de colocaciones exportado por HorW;
 - anonimización de nombres de profesores.
 
 Instalación y pruebas:
@@ -110,7 +111,7 @@ Para sustituir los nombres de docentes en la salida FUSHE:
 npm run convertir:penalara -- "entrada.xrho" "salida.fushe" --anonimizar
 ```
 
-La opción `--anonimizar`, disponible en ambos conversores, sustituye los
+La opción `--anonimizar`, disponible en los tres conversores, sustituye los
 nombres de docentes, elimina el nombre del archivo de origen y usa un título
 genérico. No examina posibles datos identificativos en grupos, espacios,
 actividades u otros textos; antes de publicar el resultado hay que revisarlo.
@@ -120,6 +121,16 @@ Conversión de la solución generada por FET:
 ```shell
 npm run convertir:fet -- "entrada_data_and_timetable.fet" "salida.fushe"
 ```
+
+Conversión de un CSV exportado por HorW:
+
+```shell
+npm run convertir:horw -- "entrada.csv" "salida.fushe" --config "horw.json"
+```
+
+El CSV de HorW no incluye las horas reales de los tramos. El archivo de
+configuración debe proporcionarlas; la correspondencia completa se documenta
+en [`docs/mapeo-horw.md`](docs/mapeo-horw.md).
 
 Los conversores no reemplazan un archivo existente salvo que se añada
 `--sobrescribir`. Solo trasladan el horario resuelto y, si encuentran una
@@ -140,11 +151,13 @@ lugar de descartarla silenciosamente.
 - `docs/estandar-horario.md`: especificación viva del formato.
 - `docs/mapeo-penalara.md`: correspondencia aplicada por el conversor de Peñalara.
 - `docs/mapeo-fet.md`: correspondencia aplicada por el conversor de FET.
+- `docs/mapeo-horw.md`: estructura CSV y correspondencia aplicada por el conversor de HorW.
 - `examples/horario-minimo.fushe`: ejemplo mínimo provisional.
 - `examples/penalara-ficticio.fushe`: ejemplo completamente ficticio con estructuras observadas en Peñalara.
 - `examples/penalara/`: entrada XRHO anonimizada y resultado FUSHE reproducible.
 - `examples/fet/`: entrada FET anonimizada y resultado FUSHE reproducible.
-- `src/`: núcleo FUSHE y adaptadores de Peñalara y FET en TypeScript.
+- `examples/horw/`: entrada CSV de HorW, configuración y resultado FUSHE reproducible.
+- `src/`: núcleo FUSHE y adaptadores de Peñalara, FET y HorW en TypeScript.
 - `tests/`: pruebas unitarias y reproducción exacta de las muestras públicas.
 
 ## Licencias
