@@ -556,7 +556,7 @@ Estas medidas evitan ataques XXE, expansión de entidades y agotamiento de recur
 <fushe version="1.0">
   <metadatos>
     <titulo>Horario de ejemplo</titulo>
-    <generador nombre="Ejemplo FUSHE" version="0.4"/>
+    <generador nombre="Ejemplo FUSHE" version="0.1.0"/>
   </metadatos>
 
   <estructura>

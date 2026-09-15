@@ -1,5 +1,7 @@
 # FUSHE
 
+[![CI](https://github.com/elprofedelabata/fushe/actions/workflows/ci.yml/badge.svg)](https://github.com/elprofedelabata/fushe/actions/workflows/ci.yml)
+
 **Formato Unificado Simplificado de Horarios Escolares**
 
 FUSHE es un formato abierto basado en XML para representar horarios escolares ya resueltos sin depender de una aplicación concreta. Su objetivo es facilitar el intercambio entre hojas de cálculo, generadores de horarios y plataformas de gestión educativa como Séneca, Peñalara, HorW o FET.
@@ -102,11 +104,16 @@ Conversión de un archivo de Peñalara:
 npm run convertir:penalara -- "entrada.xrho" "salida.fushe"
 ```
 
-Para crear una muestra publicable sin nombres de profesores:
+Para sustituir los nombres de docentes en la salida FUSHE:
 
 ```shell
 npm run convertir:penalara -- "entrada.xrho" "salida.fushe" --anonimizar
 ```
+
+La opción `--anonimizar`, disponible en ambos conversores, sustituye los
+nombres de docentes, elimina el nombre del archivo de origen y usa un título
+genérico. No examina posibles datos identificativos en grupos, espacios,
+actividades u otros textos; antes de publicar el resultado hay que revisarlo.
 
 Conversión de la solución generada por FET:
 

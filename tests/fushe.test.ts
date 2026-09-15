@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  anonimizarFushe,
   DocumentoFushe,
   leerFushe,
   serializarFushe,
@@ -72,6 +73,27 @@ test("serializa, escapa y vuelve a leer sin cambiar el documento", () => {
   assert.equal(leido.metadatos?.origen?.version, "1&2");
   assert.equal(serializarFushe(leido), xml);
   assert.deepEqual(validarFushe(leido), []);
+});
+
+test("anonimiza docentes sin atribuir el horario a una aplicación concreta", () => {
+  const original = documentoEjemplo();
+  original.metadatos!.origen!.archivo = "centro-original.fet";
+
+  const anonimizado = anonimizarFushe(original);
+
+  assert.equal(anonimizado.metadatos?.titulo, "Horario anonimizado");
+  assert.deepEqual(anonimizado.metadatos?.origen, {
+    aplicacion: "Prueba",
+    version: "1&2",
+    archivo: undefined,
+  });
+  assert.deepEqual(anonimizado.profesores?.map((profesor) => profesor.nombre), [
+    "Profesor 001",
+    "Profesor 002",
+  ]);
+  assert.equal(anonimizado.grupos?.[0].nombre, "2.º BHA");
+  assert.equal(anonimizado.espacios?.[0].nombre, "Aula 211");
+  assert.equal(original.profesores?.[0].nombre, "Pepe");
 });
 
 test("detecta referencias rotas y tramos no disponibles", () => {

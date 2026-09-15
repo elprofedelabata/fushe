@@ -5,7 +5,7 @@ export function anonimizarFushe(documento: DocumentoFushe): DocumentoFushe {
     ...documento,
     metadatos: {
       ...documento.metadatos,
-      titulo: "Horario anonimizado convertido desde Peñalara",
+      titulo: "Horario anonimizado",
       origen: documento.metadatos?.origen
         ? { ...documento.metadatos.origen, archivo: undefined }
         : undefined,
